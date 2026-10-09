@@ -1,4 +1,3 @@
-#include "Token.h"
 #include "Token_stream.h"
 #include "variable.h"
 #include "grammar.h"
@@ -28,7 +27,7 @@ double primary()
 double term()
 {
 	double left = primary();
-	while (true) {
+	for(;;) {
 		Token t = ts.get();
 		switch (t.kind) {
 		case '*':
@@ -42,7 +41,7 @@ double term()
 		}
 		default:
 			ts.unget(t);
-			return left;
+			return	 left;
 		}
 	}
 }
@@ -50,7 +49,7 @@ double term()
 double expression()
 {
 	double left = term();
-	while (true) {
+	for(;;) {
 		Token t = ts.get();
 		switch (t.kind) {
 		case '+':

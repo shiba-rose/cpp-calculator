@@ -1,7 +1,6 @@
 #include "variable.h"
-#include "Token.h"
-#include <iostream>
-#include <stdexcept>
+#include "Token.h"	
+#include "utility.h"
 
 std::vector<Variable> names;
 
@@ -9,7 +8,7 @@ double get_value(std::string s)
 {
 	for (size_t i = 0; i < names.size(); ++i)
 		if (names[i].name == s) return names[i].value;
-	throw std::runtime_error("get: undefined name " + s);
+	error("get: undefined name ",s);
 }
 
 void set_value(std::string s, double d)
@@ -19,7 +18,7 @@ void set_value(std::string s, double d)
 			names[i].value = d;
 			return;
 		}
-	throw std::runtime_error("set: undefined name " + s);
+	error("set: undefined name ", s);
 }
 
 bool is_declared(std::string s)

@@ -1,5 +1,6 @@
 CMakeFiles/calculator.dir/sourse/grammar.cpp.obj: \
  C:\pyproject\calculator\sourse\grammar.cpp \
+ C:\pyproject\calculator\sourse\Token_stream.h \
  C:\pyproject\calculator\sourse\Token.h \
  C:/msys64/ucrt64/include/c++/16.1.0/string \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
@@ -109,7 +110,6 @@ CMakeFiles/calculator.dir/sourse/grammar.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/tuple \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
- C:\pyproject\calculator\sourse\Token_stream.h \
  C:\pyproject\calculator\sourse\variable.h \
  C:/msys64/ucrt64/include/c++/16.1.0/vector \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_uninitialized.h \

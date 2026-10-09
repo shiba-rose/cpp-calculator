@@ -109,8 +109,8 @@ CMakeFiles/calculator.dir/sourse/calculator.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/tuple \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
- C:\pyproject\calculator\sourse\Token.h \
  C:\pyproject\calculator\sourse\Token_stream.h \
+ C:\pyproject\calculator\sourse\Token.h \
  C:/msys64/ucrt64/include/c++/16.1.0/iostream \
  C:/msys64/ucrt64/include/c++/16.1.0/ostream \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.h \

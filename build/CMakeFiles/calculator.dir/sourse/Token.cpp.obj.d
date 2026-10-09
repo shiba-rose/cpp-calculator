@@ -108,5 +108,4 @@ CMakeFiles/calculator.dir/sourse/Token.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/uses_allocator_args.h \
  C:/msys64/ucrt64/include/c++/16.1.0/tuple \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
- C:\pyproject\calculator\sourse\Token_stream.h
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h

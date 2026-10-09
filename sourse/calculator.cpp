@@ -1,5 +1,4 @@
 #include "calculator.h"
-#include "Token.h"
 #include "Token_stream.h"
 #include <iostream>
 #include "grammar.h"
@@ -10,7 +9,7 @@
 
 void calculate()
 {
-	while (true) try {
+	for(;;) try {
 		std::cout << prompt;
 		Token t = ts.get();
 		while (t.kind == print) t = ts.get();

@@ -1,4 +1,5 @@
-
+#ifndef VARIABLE_H
+#define VARIABLE_H
 #include <string>
 #include <vector>
 #include "Token.h"
@@ -16,3 +17,5 @@ extern std::vector<Variable> names;
 double get_value(std::string s);
 void set_value(std::string s, double d);
 bool is_declared(std::string s);
+
+#endif

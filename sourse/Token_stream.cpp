@@ -1,5 +1,4 @@
 #include "Token_stream.h"
-#include "Token.h"
 #include <iostream>
 #include "utility.h"
 
@@ -34,14 +33,19 @@ Token Token_stream::get()
 	case '9':
 	{	std::cin.unget();
 	double val;
-	std::cin >> val;
+
+	if (!(std::cin >> val))
+    	error("Invalid number");
+		std::cin.clear();
+		clean_up_mess();
+
 	return Token(number, val);
 	}
 	default:
 		if (isalpha(ch)) {
 			std::string s;
 			s += ch;
-			while (std::cin.get(ch) && (isalpha(ch) || isdigit(ch))) s = ch;
+			while (std::cin.get(ch) && (isalpha(ch) || isdigit(ch))) s += ch;
 			std::cin.unget();
 			if (s == "let") return Token(let);
 			if (s == "quit") return Token(name);
