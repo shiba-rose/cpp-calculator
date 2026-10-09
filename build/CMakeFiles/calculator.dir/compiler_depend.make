@@ -114,8 +114,7 @@ CMakeFiles/calculator.dir/sourse/Token.cpp.obj: C:/pyproject/calculator/sourse/T
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h \
-  C:/pyproject/calculator/sourse/Token.h \
-  C:/pyproject/calculator/sourse/Token_stream.h
+  C:/pyproject/calculator/sourse/Token.h
 
 CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj: C:/pyproject/calculator/sourse/Token_stream.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -1022,6 +1021,7 @@ CMakeFiles/calculator.dir/sourse/variable.cpp.obj: C:/pyproject/calculator/sours
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/stdexcept_except.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/stdexcept_throw.h \
@@ -1066,13 +1066,13 @@ CMakeFiles/calculator.dir/sourse/variable.cpp.obj: C:/pyproject/calculator/sours
   C:/msys64/ucrt64/include/c++/16.1.0/initializer_list \
   C:/msys64/ucrt64/include/c++/16.1.0/ios \
   C:/msys64/ucrt64/include/c++/16.1.0/iosfwd \
-  C:/msys64/ucrt64/include/c++/16.1.0/iostream \
   C:/msys64/ucrt64/include/c++/16.1.0/istream \
   C:/msys64/ucrt64/include/c++/16.1.0/limits \
   C:/msys64/ucrt64/include/c++/16.1.0/new \
   C:/msys64/ucrt64/include/c++/16.1.0/numbers \
   C:/msys64/ucrt64/include/c++/16.1.0/ostream \
   C:/msys64/ucrt64/include/c++/16.1.0/pstl/pstl_config.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/sstream \
   C:/msys64/ucrt64/include/c++/16.1.0/stdexcept \
   C:/msys64/ucrt64/include/c++/16.1.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/16.1.0/streambuf \
@@ -1135,6 +1135,7 @@ CMakeFiles/calculator.dir/sourse/variable.cpp.obj: C:/pyproject/calculator/sours
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h \
   C:/pyproject/calculator/sourse/Token.h \
   C:/pyproject/calculator/sourse/Token_stream.h \
+  C:/pyproject/calculator/sourse/utility.h \
   C:/pyproject/calculator/sourse/variable.h
 
 
@@ -1386,10 +1387,6 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h:
 
 C:/pyproject/calculator/sourse/Token.h:
 
-C:/msys64/ucrt64/include/c++/16.1.0/bits/nested_exception.h:
-
-C:/pyproject/calculator/sourse/Token_stream.h:
-
 C:/pyproject/calculator/sourse/Token_stream.cpp:
 
 C:/msys64/ucrt64/include/_timeval.h:
@@ -1417,6 +1414,10 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.tcc:
 C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc:
+
+C:/pyproject/calculator/sourse/Token_stream.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/nested_exception.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.h:
 

@@ -34,11 +34,11 @@ Token Token_stream::get()
 	{	std::cin.unget();
 	double val;
 
-	if (!(std::cin >> val))
-    	error("Invalid number");
+	if (!(std::cin >> val)){
 		std::cin.clear();
 		clean_up_mess();
-
+    	error("Invalid number");
+	}
 	return Token(number, val);
 	}
 	default:
@@ -48,7 +48,7 @@ Token Token_stream::get()
 			while (std::cin.get(ch) && (isalpha(ch) || isdigit(ch))) s += ch;
 			std::cin.unget();
 			if (s == "let") return Token(let);
-			if (s == "quit") return Token(name);
+			if (s == "quit") return Token(quit);
 			return Token(name, s);
 		}
 		error("Bad token");
