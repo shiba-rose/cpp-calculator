@@ -1,0 +1,44 @@
+[
+{
+  "directory": "C:/pyproject/calculator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\calculator.dir\\sourse\\calculator.cpp.obj -c C:\\pyproject\\calculator\\sourse\\calculator.cpp",
+  "file": "C:/pyproject/calculator/sourse/calculator.cpp",
+  "output": "CMakeFiles/calculator.dir/sourse/calculator.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\calculator.dir\\sourse\\Token.cpp.obj -c C:\\pyproject\\calculator\\sourse\\Token.cpp",
+  "file": "C:/pyproject/calculator/sourse/Token.cpp",
+  "output": "CMakeFiles/calculator.dir/sourse/Token.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\calculator.dir\\sourse\\Token_stream.cpp.obj -c C:\\pyproject\\calculator\\sourse\\Token_stream.cpp",
+  "file": "C:/pyproject/calculator/sourse/Token_stream.cpp",
+  "output": "CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\calculator.dir\\sourse\\utility.cpp.obj -c C:\\pyproject\\calculator\\sourse\\utility.cpp",
+  "file": "C:/pyproject/calculator/sourse/utility.cpp",
+  "output": "CMakeFiles/calculator.dir/sourse/utility.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\calculator.dir\\sourse\\variable.cpp.obj -c C:\\pyproject\\calculator\\sourse\\variable.cpp",
+  "file": "C:/pyproject/calculator/sourse/variable.cpp",
+  "output": "CMakeFiles/calculator.dir/sourse/variable.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\calculator.dir\\sourse\\grammar.cpp.obj -c C:\\pyproject\\calculator\\sourse\\grammar.cpp",
+  "file": "C:/pyproject/calculator/sourse/grammar.cpp",
+  "output": "CMakeFiles/calculator.dir/sourse/grammar.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\calculator.dir\\sourse\\main.cpp.obj -c C:\\pyproject\\calculator\\sourse\\main.cpp",
+  "file": "C:/pyproject/calculator/sourse/main.cpp",
+  "output": "CMakeFiles/calculator.dir/sourse/main.cpp.obj"
+}
+]

@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/calculator.dir/sourse/Token.cpp.obj"
+  "CMakeFiles/calculator.dir/sourse/Token.cpp.obj.d"
+  "CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj"
+  "CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj.d"
+  "CMakeFiles/calculator.dir/sourse/calculator.cpp.obj"
+  "CMakeFiles/calculator.dir/sourse/calculator.cpp.obj.d"
+  "CMakeFiles/calculator.dir/sourse/grammar.cpp.obj"
+  "CMakeFiles/calculator.dir/sourse/grammar.cpp.obj.d"
+  "CMakeFiles/calculator.dir/sourse/main.cpp.obj"
+  "CMakeFiles/calculator.dir/sourse/main.cpp.obj.d"
+  "CMakeFiles/calculator.dir/sourse/utility.cpp.obj"
+  "CMakeFiles/calculator.dir/sourse/utility.cpp.obj.d"
+  "CMakeFiles/calculator.dir/sourse/variable.cpp.obj"
+  "CMakeFiles/calculator.dir/sourse/variable.cpp.obj.d"
+  "calculator.exe"
+  "calculator.exe.manifest"
+  "calculator.pdb"
+  "libcalculator.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/calculator.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/pyproject/calculator/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
