@@ -33,27 +33,27 @@ Token Token_stream::get()
 	case '7':
 	case '8':
 	case '9':
-	{	std::cin.unget();
+	{	std::cin.unget(); // return the last character read to the input stream
 	double val;
 
 	if (!(std::cin >> val)){
-		std::cin.clear(); // return the last character read to the input stream
+		std::cin.clear(); 
 		clean_up_mess();
     	error("Invalid number");
 	}
 	return Token(number, val);
 	}
 	default:
-		if (isalpha(ch) || ch == '_') {
+		if (isalpha(ch)) {
 			std::string s;
 			s += ch;
 			while (std::cin.get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_')) s += ch;
-			std::cin.unget();
+			std::cin.unget(); // return the last character read to the input stream
 			if (s == "let") return Token(let);
 			if (s == "quit") return Token(quit);
 			return Token(name, s);
 		}
-		error("Bad token");
+		error("Bad token");	
 	}
 }
 
