@@ -52,6 +52,7 @@ Token Token_stream::get()
 			if (s == "let") return Token(let);
 			if (s == "quit") return Token(quit);
 			if (s == "const") return Token(const0);
+			if (s == "unconst") return Token(unconst0);
 			return Token(name, s);
 		}
 		error("Bad token");	

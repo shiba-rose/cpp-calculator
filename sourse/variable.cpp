@@ -13,12 +13,13 @@ double get_value(std::string s)
 
 //variable value replacement function
 
-void set_value(std::string s, double d, bool const0)
+void set_value(std::string s, double d, bool const0, bool unconst0)
 {	
-	if (const0) error(s, " is a constant");	
+	if (const0 && !unconst0) error(s, " is a constant");	
 	for (size_t i = 0; i < names.size(); ++i)
 		if (names[i].name == s) {
 			names[i].value = d;
+			names[i].const0 = false;
 			return;
 		}
 	error("set: undefined name ", s);
@@ -36,3 +37,4 @@ std::pair<bool, bool> is_declared(std::string s)
 		}
 	return {false, false};
 }
+

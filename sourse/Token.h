@@ -4,6 +4,7 @@
 #include <string>
 
 // Character codes identifying token kinds.
+static constexpr char unconst0 = 'U';
 static constexpr char const0 = 'C';
 static constexpr char let = 'L';
 static constexpr char quit = 'Q';

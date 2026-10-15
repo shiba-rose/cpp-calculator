@@ -71,15 +71,23 @@ double expression()
 double declaration()
 {
 	Token t = ts.get();
-	if (t.kind != 'a' and t.kind != 'C') error("name expected in declaration");
-	bool const0 {false};
 
+	if (t.kind != 'a' && t.kind != 'C' && t.kind != 'U') 
+		error("name expected in declaration");
+		
+	bool const0 {false};
 	if (t.kind == 'C') 
 	{
 		const0 = true;
 		t = ts.get();
 	}
 
+	bool is_unconst {false};
+	if (t.kind == 'C') 
+	{
+		is_unconst = true;
+		t = ts.get();
+	}
 	std::string name = t.name;
 	auto [in_names, is_const] = is_declared(name);
 	Token t2 = ts.get();
@@ -88,7 +96,7 @@ double declaration()
 
 	if (in_names)
 	{
-		set_value(name,d, is_const);
+		set_value(name, d, is_const, is_unconst);
 		return d;
 	}
 	
