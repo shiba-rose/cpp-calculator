@@ -67,6 +67,7 @@ double expression()
 	}
 }
 
+// function parses the declaration of a variable of the form "let name = expression"
 double declaration()
 {
 	Token t = ts.get();

@@ -3,7 +3,7 @@
 #include "Token_stream.h"
 #include <string>
 
-// function to skip unknown characters or incorrect character combinations
+// discards input until the next print token.
 
 void clean_up_mess()
 {
@@ -11,7 +11,8 @@ void clean_up_mess()
 }
 
 
-// error() simply disguises throws:
+// reports an error by throwing a runtime_error.
+
 [[noreturn]]  void error (const std::string& s)
 {
   throw std::runtime_error(s);

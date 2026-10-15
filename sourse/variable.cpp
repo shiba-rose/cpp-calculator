@@ -4,7 +4,7 @@
 
 std::vector<Variable> names;
 
-//function for finding the value of a variable
+// function for finding the value of a variable
 
 double get_value(std::string s)
 {

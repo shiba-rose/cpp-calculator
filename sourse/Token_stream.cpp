@@ -4,7 +4,8 @@
 
 Token_stream ts;
 
-// reading function
+// Reads input and converts it into tokens
+
 Token Token_stream::get()
 {
 	if (full) { full = false; return buffer; }
@@ -36,17 +37,17 @@ Token Token_stream::get()
 	double val;
 
 	if (!(std::cin >> val)){
-		std::cin.clear();
+		std::cin.clear(); // return the last character read to the input stream
 		clean_up_mess();
     	error("Invalid number");
 	}
 	return Token(number, val);
 	}
 	default:
-		if (isalpha(ch)) {
+		if (isalpha(ch) || ch == '_') {
 			std::string s;
 			s += ch;
-			while (std::cin.get(ch) && (isalpha(ch) || isdigit(ch))) s += ch;
+			while (std::cin.get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_')) s += ch;
 			std::cin.unget();
 			if (s == "let") return Token(let);
 			if (s == "quit") return Token(quit);

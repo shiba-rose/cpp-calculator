@@ -3,7 +3,7 @@
 #define TOKEN_H
 #include <string>
 
-//possible value type
+// Character codes identifying token kinds.
 
 static constexpr char let = 'L';
 static constexpr char quit = 'Q';
@@ -11,7 +11,7 @@ static constexpr char print = ';';
 static constexpr char number = '8';
 static constexpr char name = 'a';
 
-// struct for characters
+// Represents a token read from the input.
 struct Token {
 	char kind;
 	double value;

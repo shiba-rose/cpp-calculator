@@ -5,7 +5,7 @@
 #include "Token.h"
 #include "Token_stream.h"
 
-// struct for variables
+//function for finding the value of a variable
 struct Variable {
 	std::string name;
 	double value;
