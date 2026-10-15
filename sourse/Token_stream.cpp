@@ -51,6 +51,7 @@ Token Token_stream::get()
 			std::cin.unget(); // return the last character read to the input stream
 			if (s == "let") return Token(let);
 			if (s == "quit") return Token(quit);
+			if (s == "const") return Token(const0);
 			return Token(name, s);
 		}
 		error("Bad token");	

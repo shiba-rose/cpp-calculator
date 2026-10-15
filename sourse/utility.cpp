@@ -1,7 +1,4 @@
 #include "utility.h"
-#include "Token.h"
-#include "Token_stream.h"
-#include <string>
 
 // discards input until the next print token.
 

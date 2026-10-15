@@ -1,6 +1,4 @@
 #include "variable.h"
-#include "Token.h"	
-#include "utility.h"
 
 std::vector<Variable> names;
 
@@ -27,9 +25,13 @@ void set_value(std::string s, double d)
 
 // variable existence check function
 
-bool is_declared(std::string s)
+std::pair<bool, bool> is_declared(std::string s)
 {
 	for (size_t i = 0; i < names.size(); ++i)
-		if (names[i].name == s) return true;
-	return false;
+		if (names[i].name == s) 
+		{
+			if (names[i].const0 = true) return {true, true};
+			return {true, false};	
+		}
+	return {false, false};
 }

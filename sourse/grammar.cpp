@@ -71,13 +71,29 @@ double expression()
 double declaration()
 {
 	Token t = ts.get();
-	if (t.kind != 'a') error("name expected in declaration");
+	if (t.kind != 'a' and t.kind != 'C') error("name expected in declaration");
+	bool const0 {false};
+
+	if (t.kind == 'C') 
+	{
+		const0 = true;
+		Token t = ts.get();
+	}
+
 	std::string name = t.name;
-	if (is_declared(name)) error(name, " declared twice");
+	auto [in_names, is_const] = is_declared(name);
 	Token t2 = ts.get();
 	if (t2.kind != '=') error("= missing in declaration of ", name);
 	double d = expression();
-	names.push_back(Variable(name, d));
+
+	if (in_names)
+	{
+		if (is_const) error(name, " is a constant");
+		set_value(name,d);
+	}
+	
+	
+	names.push_back(Variable(const0,name, d));
 	return d;
 }
 
