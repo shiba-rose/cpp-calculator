@@ -9,6 +9,7 @@ size_t find_name_index(std::string s)
 		if (names[i].name == s) 
 			return i;	
 	error("find: undefined name ", s);
+	return 0;
 }
 
 // function for finding the value of a variable

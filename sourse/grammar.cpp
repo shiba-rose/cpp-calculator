@@ -90,8 +90,8 @@ double declaration()
 		return d;
 	}
 	
-	if (flag_const == 1) set_const(name);
 	names.push_back(Variable(name, d));
+	if (flag_const == 1) set_const(name);
 	return d;
 }
 
