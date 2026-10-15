@@ -116,7 +116,6 @@ CMakeFiles/calculator.dir/sourse/grammar.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_vector.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/vector.tcc \
- C:\pyproject\calculator\sourse\grammar.h \
  C:\pyproject\calculator\sourse\utility.h \
  C:/msys64/ucrt64/include/c++/16.1.0/sstream \
  C:/msys64/ucrt64/include/c++/16.1.0/istream \
@@ -166,4 +165,5 @@ CMakeFiles/calculator.dir/sourse/grammar.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream_print.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
+ C:\pyproject\calculator\sourse\grammar.h
