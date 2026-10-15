@@ -62,5 +62,4 @@ let nested = (alpha+beta)*(alpha-beta);
 nested;
 let result = nested/2;
 result;
->>>>>>> 3d3aa85010be004a88bb4fc84f6543f4a3c6bfc3
 quit
