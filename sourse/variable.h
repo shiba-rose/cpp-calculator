@@ -3,7 +3,6 @@
 
 #include <string>
 #include <vector>
-#include <utility>
 
 #include "Token.h"
 #include "Token_stream.h"	
@@ -20,9 +19,10 @@ struct Variable {
 
 extern std::vector<Variable> names;
 
+int find_name_index(std::string s);
 double get_value(std::string s);
-void set_value(std::string s, double d, bool const0, bool unconst0);
-std::pair<bool, bool> is_declared(std::string s);
-
-
+void set_value(std::string s, double d);
+bool is_declared(std::string s);
+void set_const(std::string name);
+void set_unconst(std::string name);
 #endif

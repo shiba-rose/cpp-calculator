@@ -2,6 +2,15 @@
 
 std::vector<Variable> names;
 
+
+int find_name_index(std::string s)
+{
+	for (size_t i = 0; i < names.size(); ++i)
+		if (names[i].name == s) 
+			return i;	
+	error("find: undefined name ", s);
+}
+
 // function for finding the value of a variable
 
 double get_value(std::string s)
@@ -13,13 +22,13 @@ double get_value(std::string s)
 
 //variable value replacement function
 
-void set_value(std::string s, double d, bool const0, bool unconst0)
+void set_value(std::string s, double d)
 {	
-	if (const0 && !unconst0) error(s, " is a constant");	
+	if (const0) error(s, " is a constant");	
 	for (size_t i = 0; i < names.size(); ++i)
 		if (names[i].name == s) {
+			if (names[i].const0) error(s, " is a constant");
 			names[i].value = d;
-			names[i].const0 = false;
 			return;
 		}
 	error("set: undefined name ", s);
@@ -27,14 +36,23 @@ void set_value(std::string s, double d, bool const0, bool unconst0)
 
 // variable existence check function
 
-std::pair<bool, bool> is_declared(std::string s)
+bool is_declared(std::string s)
 {
 	for (size_t i = 0; i < names.size(); ++i)
 		if (names[i].name == s) 
-		{
-			if (names[i].const0 == true) return {true, true};
-			return {true, false};	
-		}
-	return {false, false};
+			return true;	
+	return false;
 }
 
+void set_const(std::string name)
+{
+	int index = find_name_index(name);
+	names[index].const0 == true;
+}
+
+
+void set_unconst(std::string name)
+{
+	int index = find_name_index(name);
+	names[index].const0 == false;
+}
