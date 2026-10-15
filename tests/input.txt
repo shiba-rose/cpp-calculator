@@ -62,4 +62,8 @@ let nested = (alpha+beta_)*(alpha-beta_);
 nested;
 let result = nested/2;
 result;
+let const fixed = 11;
+fixed;
+let unconst fixed = 12;
+fixed;
 quit
