@@ -11,7 +11,6 @@ $diffFile = Join-Path $resultDir "diff.txt"
 
 if (!(Test-Path $exe)) {
     Write-Host "ERROR: calculator.exe not found. Build the project first." -ForegroundColor Red
->>>>>>> 3d3aa85010be004a88bb4fc84f6543f4a3c6bfc3
     exit 1
 }
 
@@ -26,14 +25,12 @@ $command = '"' + $exe + '" < "' + $inputFile + '"'
 $output = @(& cmd.exe /d /c $command 2>&1)
 $output | Set-Content -Path $actualFile -Encoding UTF8
 
->>>>>>> 3d3aa85010be004a88bb4fc84f6543f4a3c6bfc3
 $expected = @(
     Get-Content $expectedFile |
     ForEach-Object { $_.Trim() } |
     Where-Object { $_ -ne "" }
 )
 
->>>>>>> 3d3aa85010be004a88bb4fc84f6543f4a3c6bfc3
 $actual = @(
     foreach ($line in $output) {
         if ("$line" -match '=\s*(.*?)\s*$') {
@@ -49,7 +46,6 @@ $count = [Math]::Max($expected.Count, $actual.Count)
 for ($i = 0; $i -lt $count; $i++) {
     $e = if ($i -lt $expected.Count) { $expected[$i] } else { "<missing>" }
     $a = if ($i -lt $actual.Count) { $actual[$i] } else { "<missing>" }
->>>>>>> 3d3aa85010be004a88bb4fc84f6543f4a3c6bfc3
 
     if ($e -ne $a) {
         $passed = $false
