@@ -3,7 +3,7 @@
 std::vector<Variable> names;
 
 
-int find_name_index(std::string s)
+size_t find_name_index(std::string s)
 {
 	for (size_t i = 0; i < names.size(); ++i)
 		if (names[i].name == s) 
@@ -23,8 +23,7 @@ double get_value(std::string s)
 //variable value replacement function
 
 void set_value(std::string s, double d)
-{	
-	if (const0) error(s, " is a constant");	
+{		
 	for (size_t i = 0; i < names.size(); ++i)
 		if (names[i].name == s) {
 			if (names[i].const0) error(s, " is a constant");
@@ -46,13 +45,13 @@ bool is_declared(std::string s)
 
 void set_const(std::string name)
 {
-	int index = find_name_index(name);
-	names[index].const0 == true;
+	size_t index = find_name_index(name);
+	names[index].const0 = true;
 }
 
 
 void set_unconst(std::string name)
 {
-	int index = find_name_index(name);
-	names[index].const0 == false;
+	size_t index = find_name_index(name);
+	names[index].const0 = false;
 }

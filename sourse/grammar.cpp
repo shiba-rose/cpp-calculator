@@ -87,10 +87,11 @@ double declaration()
 	{
 		if (flag_const == 2) set_unconst(name);
 		set_value(name, d);
+		return d;
 	}
 	
 	if (flag_const == 1) set_const(name);
-	names.push_back(Variable(const0,name, d));
+	names.push_back(Variable(name, d));
 	return d;
 }
 

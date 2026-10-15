@@ -19,7 +19,7 @@ struct Variable {
 
 extern std::vector<Variable> names;
 
-int find_name_index(std::string s);
+size_t find_name_index(std::string s);
 double get_value(std::string s);
 void set_value(std::string s, double d);
 bool is_declared(std::string s);
