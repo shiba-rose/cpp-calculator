@@ -2,6 +2,7 @@
 #define TOKEN_STREAM_H
 #include "Token.h"
 
+// class for buffer and input values
 class Token_stream {
 	bool full;
 	Token buffer;

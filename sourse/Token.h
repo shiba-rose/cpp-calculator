@@ -3,12 +3,15 @@
 #define TOKEN_H
 #include <string>
 
+//possible value type
+
 static constexpr char let = 'L';
 static constexpr char quit = 'Q';
 static constexpr char print = ';';
 static constexpr char number = '8';
 static constexpr char name = 'a';
 
+// struct for characters
 struct Token {
 	char kind;
 	double value;

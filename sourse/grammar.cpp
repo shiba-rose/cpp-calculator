@@ -2,6 +2,8 @@
 #include "variable.h"
 #include "grammar.h"
 #include "utility.h"
+// calculator grammar  
+ 
 double primary()
 {
 	Token t = ts.get();

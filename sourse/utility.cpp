@@ -2,6 +2,9 @@
 #include "Token.h"
 #include "Token_stream.h"
 #include <string>
+
+// function to skip unknown characters or incorrect character combinations
+
 void clean_up_mess()
 {
 	ts.ignore(print);

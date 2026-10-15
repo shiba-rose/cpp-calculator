@@ -4,6 +4,7 @@
 
 Token_stream ts;
 
+// reading function
 Token Token_stream::get()
 {
 	if (full) { full = false; return buffer; }
