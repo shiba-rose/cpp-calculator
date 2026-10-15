@@ -1,4 +1,3 @@
-
 $testsDir = $PSScriptRoot
 $root = Split-Path -Parent $testsDir
 
@@ -11,33 +10,30 @@ $actualFile = Join-Path $resultDir "actual.txt"
 $diffFile = Join-Path $resultDir "diff.txt"
 
 if (!(Test-Path $exe)) {
-    Write-Host "ERROR: calculator.exe not found. Build the project first."
+    Write-Host "ERROR: calculator.exe not found. Build the project first." -ForegroundColor Red
+>>>>>>> 3d3aa85010be004a88bb4fc84f6543f4a3c6bfc3
     exit 1
 }
 
 if (!(Test-Path $inputFile) -or !(Test-Path $expectedFile)) {
-    Write-Host "ERROR: input.txt or expected.txt not found."
+    Write-Host "ERROR: tests/input.txt or tests/expected.txt not found." -ForegroundColor Red
     exit 1
 }
 
-New-Item -ItemType Directory -Path $resultDir -Force |
-    Out-Null
+New-Item -ItemType Directory -Path $resultDir -Force | Out-Null
 
-# Запускаем калькулятор
 $command = '"' + $exe + '" < "' + $inputFile + '"'
 $output = @(& cmd.exe /d /c $command 2>&1)
-
-# Сохраняем полный вывод
 $output | Set-Content -Path $actualFile -Encoding UTF8
 
-# Загружаем ожидаемые ответы
+>>>>>>> 3d3aa85010be004a88bb4fc84f6543f4a3c6bfc3
 $expected = @(
     Get-Content $expectedFile |
     ForEach-Object { $_.Trim() } |
     Where-Object { $_ -ne "" }
 )
 
-# Извлекаем вычисленные значения после знака =
+>>>>>>> 3d3aa85010be004a88bb4fc84f6543f4a3c6bfc3
 $actual = @(
     foreach ($line in $output) {
         if ("$line" -match '=\s*(.*?)\s*$') {
@@ -51,17 +47,9 @@ $differences = @()
 $count = [Math]::Max($expected.Count, $actual.Count)
 
 for ($i = 0; $i -lt $count; $i++) {
-    $e = if ($i -lt $expected.Count) {
-        $expected[$i]
-    } else {
-        "<missing>"
-    }
-
-    $a = if ($i -lt $actual.Count) {
-        $actual[$i]
-    } else {
-        "<missing>"
-    }
+    $e = if ($i -lt $expected.Count) { $expected[$i] } else { "<missing>" }
+    $a = if ($i -lt $actual.Count) { $actual[$i] } else { "<missing>" }
+>>>>>>> 3d3aa85010be004a88bb4fc84f6543f4a3c6bfc3
 
     if ($e -ne $a) {
         $passed = $false
@@ -71,13 +59,10 @@ for ($i = 0; $i -lt $count; $i++) {
 
 if ($passed) {
     Remove-Item $diffFile -ErrorAction SilentlyContinue
-    Write-Host "PASS: all $($expected.Count) tests passed." `
-        -ForegroundColor Green
+    Write-Host "PASS: all $($expected.Count) tests passed." -ForegroundColor Green
 } else {
-    $differences |
-        Set-Content -Path $diffFile -Encoding UTF8
-
-    Write-Host "FAIL: some tests failed." -ForegroundColor Red
+    $differences | Set-Content -Path $diffFile -Encoding UTF8
+    Write-Host "FAIL: $($differences.Count) test(s) failed." -ForegroundColor Red
     Write-Host "See: $diffFile"
     exit 1
 }
