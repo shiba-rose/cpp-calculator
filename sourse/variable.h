@@ -21,7 +21,7 @@ struct Variable {
 extern std::vector<Variable> names;
 
 double get_value(std::string s);
-void set_value(std::string s, double d);
+void set_value(std::string s, double d, bool const0);
 std::pair<bool, bool> is_declared(std::string s);
 
 #endif

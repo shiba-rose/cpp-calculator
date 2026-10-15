@@ -77,7 +77,7 @@ double declaration()
 	if (t.kind == 'C') 
 	{
 		const0 = true;
-		Token t = ts.get();
+		t = ts.get();
 	}
 
 	std::string name = t.name;
@@ -88,8 +88,8 @@ double declaration()
 
 	if (in_names)
 	{
-		if (is_const) error(name, " is a constant");
-		set_value(name,d);
+		set_value(name,d, is_const);
+		return d;
 	}
 	
 	
