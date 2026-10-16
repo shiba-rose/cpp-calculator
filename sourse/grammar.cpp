@@ -20,7 +20,7 @@ double primary()
 	case number:
 		return t.value;
 	case name:
-		return get_value(t.name);
+		return symbol_table.get_value(t.name);
 	default:
 		error("primary expected");
 	}
@@ -83,15 +83,15 @@ double declaration()
 	Token t2 = ts.get();
 	if (t2.kind != '=') error("= missing in declaration of ", name);
 	double d = expression();
-	if (is_declared(name))
+	if (symbol_table.is_declared(name))
 	{
-		if (flag_const == 2) set_unconst(name);
-		set_value(name, d);
+		if (flag_const == 2) symbol_table.set_unconst(name);
+		symbol_table.set_value(name, d);
 		return d;
 	}
 	
-	names.push_back(Variable(name, d));
-	if (flag_const == 1) set_const(name);
+	symbol_table.push_back(name, d);
+	if (flag_const == 1) symbol_table.set_const(name);
 	return d;
 }
 
