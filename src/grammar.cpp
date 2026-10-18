@@ -41,7 +41,7 @@ double primary()
 		return d;
 	}
 	case '-':
-		write_primer(t.kind);
+		primer += "-";
 		return -primary();
 	case number:
 		write_primer(t.value);
@@ -65,11 +65,12 @@ double term()
 			left *= primary();
 			break;
 		case '/':
-		{	double d = primary();
-		if (d == 0) error("divide by zero");
-		write_primer(t.kind);
-		left /= d;
-		break;
+		{
+			write_primer(t.kind);	
+			double d = primary();
+			if (d == 0) error("divide by zero");
+			left /= d;
+			break;
 		}
 		default:
 			ts.unget(t);

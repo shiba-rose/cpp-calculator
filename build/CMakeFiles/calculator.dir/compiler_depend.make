@@ -18,6 +18,7 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/pyproject/calculator/src/ca
   C:/msys64/ucrt64/include/c++/16.1.0/bits/basic_string.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/char_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/charconv.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/codecvt.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/concept_check.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/cpp_type_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/cxxabi_forced.h \
@@ -32,13 +33,14 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/pyproject/calculator/src/ca
   C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ios_base.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/iterator_concepts.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.tcc \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_conv.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets_nonio.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets_nonio.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/max_size_type.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memoryfwd.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/move.h \
@@ -53,10 +55,8 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/pyproject/calculator/src/ca
   C:/msys64/ucrt64/include/c++/16.1.0/bits/postypes.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ptr_traits.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/quoted_string.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/range_access.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_base.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/std_abs.h \
@@ -81,11 +81,11 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/pyproject/calculator/src/ca
   C:/msys64/ucrt64/include/c++/16.1.0/cctype \
   C:/msys64/ucrt64/include/c++/16.1.0/cerrno \
   C:/msys64/ucrt64/include/c++/16.1.0/clocale \
-  C:/msys64/ucrt64/include/c++/16.1.0/compare \
   C:/msys64/ucrt64/include/c++/16.1.0/concepts \
   C:/msys64/ucrt64/include/c++/16.1.0/cstddef \
   C:/msys64/ucrt64/include/c++/16.1.0/cstdio \
   C:/msys64/ucrt64/include/c++/16.1.0/cstdlib \
+  C:/msys64/ucrt64/include/c++/16.1.0/ctime \
   C:/msys64/ucrt64/include/c++/16.1.0/cwchar \
   C:/msys64/ucrt64/include/c++/16.1.0/cwctype \
   C:/msys64/ucrt64/include/c++/16.1.0/debug/assertions.h \
@@ -97,13 +97,13 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/pyproject/calculator/src/ca
   C:/msys64/ucrt64/include/c++/16.1.0/ext/string_conversions.h \
   C:/msys64/ucrt64/include/c++/16.1.0/ext/type_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/initializer_list \
+  C:/msys64/ucrt64/include/c++/16.1.0/iomanip \
   C:/msys64/ucrt64/include/c++/16.1.0/ios \
   C:/msys64/ucrt64/include/c++/16.1.0/iosfwd \
   C:/msys64/ucrt64/include/c++/16.1.0/iostream \
   C:/msys64/ucrt64/include/c++/16.1.0/istream \
-  C:/msys64/ucrt64/include/c++/16.1.0/limits \
+  C:/msys64/ucrt64/include/c++/16.1.0/locale \
   C:/msys64/ucrt64/include/c++/16.1.0/new \
-  C:/msys64/ucrt64/include/c++/16.1.0/numbers \
   C:/msys64/ucrt64/include/c++/16.1.0/ostream \
   C:/msys64/ucrt64/include/c++/16.1.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/16.1.0/sstream \
@@ -126,7 +126,9 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/pyproject/calculator/src/ca
   C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/ucrt64/include/corecrt.h \
   C:/msys64/ucrt64/include/corecrt_startup.h \
   C:/msys64/ucrt64/include/corecrt_stdio_config.h \
@@ -189,6 +191,7 @@ CMakeFiles/calculator.dir/src/grammar.cpp.obj: C:/pyproject/calculator/src/gramm
   C:/msys64/ucrt64/include/c++/16.1.0/bits/basic_string.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/char_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/charconv.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/codecvt.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/concept_check.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/cpp_type_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/cxxabi_forced.h \
@@ -203,13 +206,14 @@ CMakeFiles/calculator.dir/src/grammar.cpp.obj: C:/pyproject/calculator/src/gramm
   C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ios_base.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/iterator_concepts.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.tcc \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_conv.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets_nonio.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets_nonio.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/max_size_type.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memoryfwd.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/move.h \
@@ -224,10 +228,8 @@ CMakeFiles/calculator.dir/src/grammar.cpp.obj: C:/pyproject/calculator/src/gramm
   C:/msys64/ucrt64/include/c++/16.1.0/bits/postypes.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ptr_traits.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/quoted_string.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/range_access.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_base.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/std_abs.h \
@@ -256,11 +258,11 @@ CMakeFiles/calculator.dir/src/grammar.cpp.obj: C:/pyproject/calculator/src/gramm
   C:/msys64/ucrt64/include/c++/16.1.0/cctype \
   C:/msys64/ucrt64/include/c++/16.1.0/cerrno \
   C:/msys64/ucrt64/include/c++/16.1.0/clocale \
-  C:/msys64/ucrt64/include/c++/16.1.0/compare \
   C:/msys64/ucrt64/include/c++/16.1.0/concepts \
   C:/msys64/ucrt64/include/c++/16.1.0/cstddef \
   C:/msys64/ucrt64/include/c++/16.1.0/cstdio \
   C:/msys64/ucrt64/include/c++/16.1.0/cstdlib \
+  C:/msys64/ucrt64/include/c++/16.1.0/ctime \
   C:/msys64/ucrt64/include/c++/16.1.0/cwchar \
   C:/msys64/ucrt64/include/c++/16.1.0/cwctype \
   C:/msys64/ucrt64/include/c++/16.1.0/debug/assertions.h \
@@ -272,12 +274,12 @@ CMakeFiles/calculator.dir/src/grammar.cpp.obj: C:/pyproject/calculator/src/gramm
   C:/msys64/ucrt64/include/c++/16.1.0/ext/string_conversions.h \
   C:/msys64/ucrt64/include/c++/16.1.0/ext/type_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/initializer_list \
+  C:/msys64/ucrt64/include/c++/16.1.0/iomanip \
   C:/msys64/ucrt64/include/c++/16.1.0/ios \
   C:/msys64/ucrt64/include/c++/16.1.0/iosfwd \
   C:/msys64/ucrt64/include/c++/16.1.0/istream \
-  C:/msys64/ucrt64/include/c++/16.1.0/limits \
+  C:/msys64/ucrt64/include/c++/16.1.0/locale \
   C:/msys64/ucrt64/include/c++/16.1.0/new \
-  C:/msys64/ucrt64/include/c++/16.1.0/numbers \
   C:/msys64/ucrt64/include/c++/16.1.0/ostream \
   C:/msys64/ucrt64/include/c++/16.1.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/16.1.0/sstream \
@@ -301,7 +303,9 @@ CMakeFiles/calculator.dir/src/grammar.cpp.obj: C:/pyproject/calculator/src/gramm
   C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/ucrt64/include/corecrt.h \
   C:/msys64/ucrt64/include/corecrt_startup.h \
   C:/msys64/ucrt64/include/corecrt_stdio_config.h \
@@ -378,13 +382,11 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/pyproject/calculator/src/main.cpp
   C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ios_base.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/iterator_concepts.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/max_size_type.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memoryfwd.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/move.h \
@@ -400,9 +402,6 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/pyproject/calculator/src/main.cpp
   C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ptr_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/range_access.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_base.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/std_abs.h \
@@ -427,7 +426,6 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/pyproject/calculator/src/main.cpp
   C:/msys64/ucrt64/include/c++/16.1.0/cctype \
   C:/msys64/ucrt64/include/c++/16.1.0/cerrno \
   C:/msys64/ucrt64/include/c++/16.1.0/clocale \
-  C:/msys64/ucrt64/include/c++/16.1.0/compare \
   C:/msys64/ucrt64/include/c++/16.1.0/concepts \
   C:/msys64/ucrt64/include/c++/16.1.0/cstddef \
   C:/msys64/ucrt64/include/c++/16.1.0/cstdio \
@@ -447,9 +445,7 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/pyproject/calculator/src/main.cpp
   C:/msys64/ucrt64/include/c++/16.1.0/iosfwd \
   C:/msys64/ucrt64/include/c++/16.1.0/iostream \
   C:/msys64/ucrt64/include/c++/16.1.0/istream \
-  C:/msys64/ucrt64/include/c++/16.1.0/limits \
   C:/msys64/ucrt64/include/c++/16.1.0/new \
-  C:/msys64/ucrt64/include/c++/16.1.0/numbers \
   C:/msys64/ucrt64/include/c++/16.1.0/ostream \
   C:/msys64/ucrt64/include/c++/16.1.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/16.1.0/sstream \
@@ -537,9 +533,7 @@ CMakeFiles/calculator.dir/src/token.cpp.obj: C:/pyproject/calculator/src/token.c
   C:/msys64/ucrt64/include/c++/16.1.0/bits/functional_hash.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/hash_bytes.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/iterator_concepts.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/max_size_type.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memoryfwd.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/move.h \
@@ -551,9 +545,6 @@ CMakeFiles/calculator.dir/src/token.cpp.obj: C:/pyproject/calculator/src/token.c
   C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ptr_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/range_access.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_base.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/stdexcept_throw.h \
@@ -574,7 +565,6 @@ CMakeFiles/calculator.dir/src/token.cpp.obj: C:/pyproject/calculator/src/token.c
   C:/msys64/ucrt64/include/c++/16.1.0/cctype \
   C:/msys64/ucrt64/include/c++/16.1.0/cerrno \
   C:/msys64/ucrt64/include/c++/16.1.0/clocale \
-  C:/msys64/ucrt64/include/c++/16.1.0/compare \
   C:/msys64/ucrt64/include/c++/16.1.0/concepts \
   C:/msys64/ucrt64/include/c++/16.1.0/cstddef \
   C:/msys64/ucrt64/include/c++/16.1.0/cstdio \
@@ -588,9 +578,7 @@ CMakeFiles/calculator.dir/src/token.cpp.obj: C:/pyproject/calculator/src/token.c
   C:/msys64/ucrt64/include/c++/16.1.0/ext/type_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/initializer_list \
   C:/msys64/ucrt64/include/c++/16.1.0/iosfwd \
-  C:/msys64/ucrt64/include/c++/16.1.0/limits \
   C:/msys64/ucrt64/include/c++/16.1.0/new \
-  C:/msys64/ucrt64/include/c++/16.1.0/numbers \
   C:/msys64/ucrt64/include/c++/16.1.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/16.1.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/16.1.0/string \
@@ -660,13 +648,11 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/pyproject/calculator/src/
   C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ios_base.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/iterator_concepts.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/max_size_type.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memoryfwd.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/move.h \
@@ -682,9 +668,6 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/pyproject/calculator/src/
   C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ptr_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/range_access.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_base.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/std_abs.h \
@@ -709,7 +692,6 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/pyproject/calculator/src/
   C:/msys64/ucrt64/include/c++/16.1.0/cctype \
   C:/msys64/ucrt64/include/c++/16.1.0/cerrno \
   C:/msys64/ucrt64/include/c++/16.1.0/clocale \
-  C:/msys64/ucrt64/include/c++/16.1.0/compare \
   C:/msys64/ucrt64/include/c++/16.1.0/concepts \
   C:/msys64/ucrt64/include/c++/16.1.0/cstddef \
   C:/msys64/ucrt64/include/c++/16.1.0/cstdio \
@@ -729,9 +711,7 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/pyproject/calculator/src/
   C:/msys64/ucrt64/include/c++/16.1.0/iosfwd \
   C:/msys64/ucrt64/include/c++/16.1.0/iostream \
   C:/msys64/ucrt64/include/c++/16.1.0/istream \
-  C:/msys64/ucrt64/include/c++/16.1.0/limits \
   C:/msys64/ucrt64/include/c++/16.1.0/new \
-  C:/msys64/ucrt64/include/c++/16.1.0/numbers \
   C:/msys64/ucrt64/include/c++/16.1.0/ostream \
   C:/msys64/ucrt64/include/c++/16.1.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/16.1.0/sstream \
@@ -829,13 +809,11 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/pyproject/calculator/src/utili
   C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ios_base.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/iterator_concepts.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/max_size_type.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memoryfwd.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/move.h \
@@ -851,9 +829,6 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/pyproject/calculator/src/utili
   C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ptr_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/range_access.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_base.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/std_abs.h \
@@ -878,7 +853,6 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/pyproject/calculator/src/utili
   C:/msys64/ucrt64/include/c++/16.1.0/cctype \
   C:/msys64/ucrt64/include/c++/16.1.0/cerrno \
   C:/msys64/ucrt64/include/c++/16.1.0/clocale \
-  C:/msys64/ucrt64/include/c++/16.1.0/compare \
   C:/msys64/ucrt64/include/c++/16.1.0/concepts \
   C:/msys64/ucrt64/include/c++/16.1.0/cstddef \
   C:/msys64/ucrt64/include/c++/16.1.0/cstdio \
@@ -897,9 +871,7 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/pyproject/calculator/src/utili
   C:/msys64/ucrt64/include/c++/16.1.0/ios \
   C:/msys64/ucrt64/include/c++/16.1.0/iosfwd \
   C:/msys64/ucrt64/include/c++/16.1.0/istream \
-  C:/msys64/ucrt64/include/c++/16.1.0/limits \
   C:/msys64/ucrt64/include/c++/16.1.0/new \
-  C:/msys64/ucrt64/include/c++/16.1.0/numbers \
   C:/msys64/ucrt64/include/c++/16.1.0/ostream \
   C:/msys64/ucrt64/include/c++/16.1.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/16.1.0/sstream \
@@ -997,13 +969,11 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/pyproject/calculator/src/vari
   C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ios_base.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/iterator_concepts.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/max_size_type.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/memoryfwd.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/move.h \
@@ -1019,9 +989,6 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/pyproject/calculator/src/vari
   C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ptr_traits.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/range_access.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_base.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h \
-  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/std_abs.h \
@@ -1050,7 +1017,6 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/pyproject/calculator/src/vari
   C:/msys64/ucrt64/include/c++/16.1.0/cctype \
   C:/msys64/ucrt64/include/c++/16.1.0/cerrno \
   C:/msys64/ucrt64/include/c++/16.1.0/clocale \
-  C:/msys64/ucrt64/include/c++/16.1.0/compare \
   C:/msys64/ucrt64/include/c++/16.1.0/concepts \
   C:/msys64/ucrt64/include/c++/16.1.0/cstddef \
   C:/msys64/ucrt64/include/c++/16.1.0/cstdio \
@@ -1069,9 +1035,7 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/pyproject/calculator/src/vari
   C:/msys64/ucrt64/include/c++/16.1.0/ios \
   C:/msys64/ucrt64/include/c++/16.1.0/iosfwd \
   C:/msys64/ucrt64/include/c++/16.1.0/istream \
-  C:/msys64/ucrt64/include/c++/16.1.0/limits \
   C:/msys64/ucrt64/include/c++/16.1.0/new \
-  C:/msys64/ucrt64/include/c++/16.1.0/numbers \
   C:/msys64/ucrt64/include/c++/16.1.0/ostream \
   C:/msys64/ucrt64/include/c++/16.1.0/pstl/pstl_config.h \
   C:/msys64/ucrt64/include/c++/16.1.0/sstream \
@@ -1148,6 +1112,8 @@ C:/msys64/ucrt64/include/_timeval.h:
 
 C:/pyproject/calculator/src/calculator.cpp:
 
+C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets_nonio.h:
+
 C:/msys64/ucrt64/include/_mingw_secapi.h:
 
 C:/msys64/ucrt64/include/_mingw.h:
@@ -1168,6 +1134,8 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_algobase.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/backward/binders.h:
 
+C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/messages_members.h:
+
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stdexcept_except.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++allocator.h:
@@ -1183,10 +1151,6 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/stdexcept_throw.h:
 C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/ctype_inline.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/alloc_traits.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_uninitialized.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc:
 
@@ -1210,6 +1174,18 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/cpp_type_traits.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/charconv.h:
 
+C:/msys64/ucrt64/include/c++/16.1.0/bits/quoted_string.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/erase_if.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/new_allocator.h:
+
+C:/pyproject/calculator/src/token.cpp:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/exception_ptr.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/codecvt.h:
+
 C:/msys64/ucrt64/include/c++/16.1.0/stdexcept:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/postypes.h:
@@ -1225,14 +1201,6 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/concept_check.h:
 C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream_insert.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/cxxabi_forced.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/erase_if.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/new_allocator.h:
-
-C:/pyproject/calculator/src/token.cpp:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/exception_ptr.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/exception.h:
 
@@ -1254,21 +1222,17 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream_print.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc:
 
-C:/msys64/ucrt64/include/c++/16.1.0/exception:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/iterator_concepts.h:
+C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_conv.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_classes.h:
 
-C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h:
-
 C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets_nonio.tcc:
 
 C:/pyproject/calculator/src/token_stream.cpp:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/max_size_type.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/memory_resource.h:
 
@@ -1287,8 +1251,6 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.tcc:
 C:/msys64/ucrt64/include/c++/16.1.0/tuple:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h:
-
-C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_base.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/ptr_traits.h:
 
@@ -1338,17 +1300,19 @@ C:/msys64/ucrt64/include/c++/16.1.0/cerrno:
 
 C:/msys64/ucrt64/include/c++/16.1.0/clocale:
 
-C:/msys64/ucrt64/include/c++/16.1.0/compare:
-
 C:/msys64/ucrt64/include/c++/16.1.0/cstdio:
 
 C:/msys64/ucrt64/include/c++/16.1.0/cstdlib:
+
+C:/msys64/ucrt64/include/c++/16.1.0/ctime:
 
 C:/msys64/ucrt64/include/c++/16.1.0/cwctype:
 
 C:/msys64/ucrt64/include/c++/16.1.0/debug/assertions.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/debug/debug.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/exception:
 
 C:/msys64/ucrt64/include/c++/16.1.0/ext/alloc_traits.h:
 
@@ -1364,6 +1328,8 @@ C:/msys64/ucrt64/include/c++/16.1.0/ext/type_traits.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/initializer_list:
 
+C:/msys64/ucrt64/include/c++/16.1.0/iomanip:
+
 C:/msys64/ucrt64/include/c++/16.1.0/ios:
 
 C:/msys64/ucrt64/include/c++/16.1.0/iosfwd:
@@ -1372,11 +1338,9 @@ C:/msys64/ucrt64/include/c++/16.1.0/iostream:
 
 C:/msys64/ucrt64/include/c++/16.1.0/istream:
 
-C:/msys64/ucrt64/include/c++/16.1.0/limits:
+C:/msys64/ucrt64/include/c++/16.1.0/locale:
 
 C:/msys64/ucrt64/include/c++/16.1.0/new:
-
-C:/msys64/ucrt64/include/c++/16.1.0/numbers:
 
 C:/msys64/ucrt64/include/c++/16.1.0/ostream:
 
@@ -1413,6 +1377,8 @@ C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/gthr-default.h:
 C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/gthr.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/os_defines.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/time_members.h:
 
 C:/msys64/ucrt64/include/corecrt.h:
 
@@ -1491,6 +1457,8 @@ C:/pyproject/calculator/src/internal/utility.h:
 C:/pyproject/calculator/src/grammar.cpp:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_bvector.h:
+
+C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_uninitialized.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_vector.h:
 

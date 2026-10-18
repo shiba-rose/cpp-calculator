@@ -34,7 +34,7 @@ $expected = @(
 
 $actual = @(
     foreach ($line in $output) {
-        if ("$line" -match '=\s*(.*?)\s*$') {
+        if ("$line" -match '^.*=\s*(.*?)\s*$') {
             $Matches[1].Trim()
         }
     }

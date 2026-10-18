@@ -29,25 +29,15 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: \
  C:/msys64/ucrt64/include/swprintf.inl \
  C:/msys64/ucrt64/include/sec_api/wchar_s.h \
  C:/msys64/ucrt64/include/c++/16.1.0/type_traits \
- C:/msys64/ucrt64/include/c++/16.1.0/compare \
- C:/msys64/ucrt64/include/c++/16.1.0/concepts \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_construct.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/allocator.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/new_allocator.h \
  C:/msys64/ucrt64/include/c++/16.1.0/new \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/exception.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/new_except.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/exception_defines.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/move.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_iterator_base_types.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/iterator_concepts.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/ptr_traits.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_iterator_base_funcs.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/concept_check.h \
- C:/msys64/ucrt64/include/c++/16.1.0/debug/assertions.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/allocator.h \
- C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/new_allocator.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/new_throw.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/move.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/cpp_type_traits.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/localefwd.h \
  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++locale.h \
@@ -59,8 +49,13 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: \
  C:/msys64/ucrt64/include/ctype.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream_insert.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/cxxabi_forced.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_iterator_base_funcs.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/concept_check.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/debug/assertions.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_iterator_base_types.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_iterator.h \
  C:/msys64/ucrt64/include/c++/16.1.0/ext/type_traits.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/ptr_traits.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_function.h \
  C:/msys64/ucrt64/include/c++/16.1.0/backward/binders.h \
  C:/msys64/ucrt64/include/c++/16.1.0/ext/numeric_traits.h \
@@ -72,19 +67,17 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/debug/debug.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/predefined_ops.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bit \
+ C:/msys64/ucrt64/include/c++/16.1.0/concepts \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/range_access.h \
  C:/msys64/ucrt64/include/c++/16.1.0/initializer_list \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/erase_if.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/basic_string.h \
  C:/msys64/ucrt64/include/c++/16.1.0/ext/alloc_traits.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/alloc_traits.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_construct.h \
  C:/msys64/ucrt64/include/c++/16.1.0/string_view \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/functional_hash.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/hash_bytes.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_base.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/max_size_type.h \
- C:/msys64/ucrt64/include/c++/16.1.0/numbers \
- C:/msys64/ucrt64/include/c++/16.1.0/limits \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/string_view.tcc \
  C:/msys64/ucrt64/include/c++/16.1.0/ext/string_conversions.h \
  C:/msys64/ucrt64/include/c++/16.1.0/cstdlib \
@@ -108,7 +101,6 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/uses_allocator_args.h \
  C:/msys64/ucrt64/include/c++/16.1.0/tuple \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
  C:/pyproject/calculator/src/internal/token_stream.h \
  C:/pyproject/calculator/src/internal/token.h \
  C:/msys64/ucrt64/include/c++/16.1.0/istream \
@@ -159,6 +151,16 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
  C:/msys64/ucrt64/include/c++/16.1.0/iostream \
+ C:/msys64/ucrt64/include/c++/16.1.0/iomanip \
+ C:/msys64/ucrt64/include/c++/16.1.0/locale \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets_nonio.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/ctime \
+ C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/time_members.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/codecvt.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets_nonio.tcc \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_conv.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/quoted_string.h \
  C:/msys64/ucrt64/include/c++/16.1.0/sstream \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
  C:/pyproject/calculator/src/internal/grammar.h \

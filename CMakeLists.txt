@@ -6,7 +6,7 @@ project(Calculator
 )
 
 set(HEADERS
-    include/calculator/calculator.h
+    src/internal/calculator.h
     src/internal/token.h
     src/internal/token_stream.h
     src/internal/grammar.h
@@ -25,6 +25,8 @@ set(SOURCES
 )
 
 set(executable_name calculator)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(${executable_name} ${SOURCES} ${HEADERS})
 target_include_directories(${executable_name} PRIVATE

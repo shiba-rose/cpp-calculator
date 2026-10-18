@@ -1,6 +1,7 @@
 #include "calculator.h"
 #include "token_stream.h"
 #include <iostream>
+#include <iomanip>
 #include <sstream>
 #include "grammar.h"
 #include "utility.h"
@@ -29,7 +30,17 @@ std::string calculator(std::string str)
 
             ts.unget(t);
             std::ostringstream output;
-            output << result << statement() << '\n';
+
+            double value = statement();
+            std::ostringstream s;
+            s << std::setprecision(15) << std::defaultfloat << value;
+            std::string suffix = s.str() + " ";
+
+            if (primer.size() < suffix.size() ||
+                primer.compare(primer.size() - suffix.size(), suffix.size(), suffix) != 0)
+                output << result << value;
+
+            output << '\n';
             str_result = str_result + primer + output.str();
         }
         catch (const std::runtime_error& e) {
