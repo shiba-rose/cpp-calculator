@@ -1,5 +1,5 @@
 #include "variable.h"
-
+#include "grammar.h"
 
 
 Symbol_table symbol_table;
@@ -61,4 +61,43 @@ void Symbol_table::set_unconst(std::string name)
 
 void Symbol_table::push_back(std::string s, double d){
 	var_table.push_back(Variable(s, d));
+}
+double Symbol_table::define_name(){
+
+	Token t = ts.get();
+	int flag_const = 0;
+	if (t.kind == 'C' || t.kind == 'U')
+	{
+		if (t.kind == 'C') flag_const = 1;
+		else flag_const = 2;
+		t = ts.get();	
+	}
+	if (t.kind != 'a') error("name expected in declaration");
+	std::string name = t.name;
+	Token t2 = ts.get();
+	if (t2.kind != '=') 
+	{
+		if (flag_const == 1)
+		{
+			symbol_table.set_const(name);
+		}
+
+		else if (flag_const == 2)  
+		{
+			symbol_table.set_unconst(name);
+		}
+
+		return var_table[find_name_index(name)].value;
+	}
+	double d = expression();
+	if (symbol_table.is_declared(name))
+	{
+		if (flag_const == 2) symbol_table.set_unconst(name);
+		symbol_table.set_value(name, d);
+		return d;
+	}
+	
+	symbol_table.push_back(name, d);
+	if (flag_const == 1) symbol_table.set_const(name);
+	return d;	
 }

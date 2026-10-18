@@ -8,16 +8,16 @@
 
 void run_calculator()
 {
-	std::cout << ">";
 	for(;;) 
 	try {
+	std::cout << ">";
 	std::string input;
 	std::getline(std::cin, input);
 	std::string result {calculator(input)};
 	std::cout << result << std::endl;
 	}
 
-	catch (std::string error_message){
+	catch (std::string s){
 		return;
 	}
 

@@ -1,7 +1,6 @@
 #include "token_stream.h"
 #include <iostream>
 #include "utility.h"
-#include "calculator.h"
 
 Token_stream ts;
 
@@ -11,7 +10,9 @@ Token Token_stream::get()
 {
 	if (full) { full = false; return buffer; }
 	char ch;
-	stream >> ch;
+	if (!(*stream >> ch)) {
+    	return Token(end_of_input);
+	}
 	switch (ch) {
 	case '(':
 	case ')':
@@ -34,10 +35,10 @@ Token Token_stream::get()
 	case '7':
 	case '8':
 	case '9':
-	{	std::cin.unget(); // return the last character read to the input stream
+	{	stream->unget();; // return the last character read to the input stream
 	double val;
 
-	if (!(std::cin >> val)){
+	if (!(*stream >> val)){
 		std::cin.clear(); 
 		clean_up_mess();
     	error("Invalid number");
@@ -48,8 +49,8 @@ Token Token_stream::get()
 		if (isalpha(ch)) {
 			std::string s;
 			s += ch;
-			while (std::cin.get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_')) s += ch;
-			std::cin.unget(); // return the last character read to the input stream
+			while (stream->get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_')) s += ch;
+			stream->unget(); // return the last character read to the input stream
 			if (s == "let") return Token(let);
 			if (s == "quit") return Token(quit);
 			if (s == "const") return Token(const0);
@@ -70,6 +71,6 @@ void Token_stream::ignore(char c)
 	full = false;
 
 	char ch;
-	while (std::cin >> ch)
+	while (*stream >> ch)
 		if (ch == c) return;
 }

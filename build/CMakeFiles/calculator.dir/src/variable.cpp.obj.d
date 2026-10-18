@@ -116,8 +116,6 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/vector.tcc \
  C:/pyproject/calculator/src/internal/token.h \
  C:/pyproject/calculator/src/internal/token_stream.h \
- C:/pyproject/calculator/src/internal/utility.h \
- C:/msys64/ucrt64/include/c++/16.1.0/sstream \
  C:/msys64/ucrt64/include/c++/16.1.0/istream \
  C:/msys64/ucrt64/include/c++/16.1.0/ios \
  C:/msys64/ucrt64/include/c++/16.1.0/exception \
@@ -165,4 +163,7 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream_print.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc
+ C:/pyproject/calculator/src/internal/utility.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/sstream \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
+ C:/pyproject/calculator/src/internal/grammar.h

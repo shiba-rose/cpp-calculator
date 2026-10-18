@@ -70,29 +70,8 @@ double expression()
 // function parses the declaration of a variable of the form "let name = expression"
 double declaration()
 {
-	Token t = ts.get();
-	int flag_const = 0;
-	if (t.kind == 'C' || t.kind == 'U')
-	{
-		if (t.kind == 'C') flag_const = 1;
-		else flag_const = 2;
-		t = ts.get();	
-	}
-	if (t.kind != 'a') error("name expected in declaration");
-	std::string name = t.name;
-	Token t2 = ts.get();
-	if (t2.kind != '=') error("= missing in declaration of ", name);
-	double d = expression();
-	if (symbol_table.is_declared(name))
-	{
-		if (flag_const == 2) symbol_table.set_unconst(name);
-		symbol_table.set_value(name, d);
-		return d;
-	}
-	
-	symbol_table.push_back(name, d);
-	if (flag_const == 1) symbol_table.set_const(name);
-	return d;
+	return symbol_table.define_name();
+
 }
 
 double statement()

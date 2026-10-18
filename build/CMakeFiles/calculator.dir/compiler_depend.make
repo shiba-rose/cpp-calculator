@@ -166,7 +166,7 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/pyproject/calculator/src/ca
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h \
-  C:/pyproject/calculator/include/calculator/calculator.h \
+  C:/pyproject/calculator/src/internal/calculator.h \
   C:/pyproject/calculator/src/internal/grammar.h \
   C:/pyproject/calculator/src/internal/token.h \
   C:/pyproject/calculator/src/internal/token_stream.h \
@@ -404,6 +404,7 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/pyproject/calculator/src/main.cpp
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_cmp.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/stdexcept_except.h \
   C:/msys64/ucrt64/include/c++/16.1.0/bits/stdexcept_throw.h \
@@ -451,6 +452,7 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/pyproject/calculator/src/main.cpp
   C:/msys64/ucrt64/include/c++/16.1.0/numbers \
   C:/msys64/ucrt64/include/c++/16.1.0/ostream \
   C:/msys64/ucrt64/include/c++/16.1.0/pstl/pstl_config.h \
+  C:/msys64/ucrt64/include/c++/16.1.0/sstream \
   C:/msys64/ucrt64/include/c++/16.1.0/stdexcept \
   C:/msys64/ucrt64/include/c++/16.1.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/16.1.0/streambuf \
@@ -510,7 +512,7 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/pyproject/calculator/src/main.cpp
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h \
-  C:/pyproject/calculator/include/calculator/calculator.h
+  C:/pyproject/calculator/src/internal/calculator.h
 
 CMakeFiles/calculator.dir/src/token.cpp.obj: C:/pyproject/calculator/src/token.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -1133,6 +1135,7 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/pyproject/calculator/src/vari
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h \
+  C:/pyproject/calculator/src/internal/grammar.h \
   C:/pyproject/calculator/src/internal/token.h \
   C:/pyproject/calculator/src/internal/token_stream.h \
   C:/pyproject/calculator/src/internal/utility.h \
@@ -1317,6 +1320,8 @@ C:/msys64/ucrt64/include/c++/16.1.0/bits/string_view.tcc:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/stringfwd.h:
 
+C:/pyproject/calculator/src/internal/calculator.h:
+
 C:/msys64/ucrt64/include/c++/16.1.0/bits/uses_allocator.h:
 
 C:/msys64/ucrt64/include/c++/16.1.0/bits/uses_allocator_args.h:
@@ -1476,8 +1481,6 @@ C:/msys64/ucrt64/include/vadefs.h:
 C:/msys64/ucrt64/include/wchar.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/limits.h:
-
-C:/pyproject/calculator/include/calculator/calculator.h:
 
 C:/pyproject/calculator/src/internal/grammar.h:
 

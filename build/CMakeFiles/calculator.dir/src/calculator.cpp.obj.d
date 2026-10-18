@@ -1,6 +1,6 @@
 CMakeFiles/calculator.dir/src/calculator.cpp.obj: \
  C:\pyproject\calculator\src\calculator.cpp \
- C:/pyproject/calculator/include/calculator/calculator.h \
+ C:/pyproject/calculator/src/internal/calculator.h \
  C:/msys64/ucrt64/include/c++/16.1.0/string \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -111,9 +111,7 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
  C:/pyproject/calculator/src/internal/token_stream.h \
  C:/pyproject/calculator/src/internal/token.h \
- C:/msys64/ucrt64/include/c++/16.1.0/iostream \
- C:/msys64/ucrt64/include/c++/16.1.0/ostream \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/istream \
  C:/msys64/ucrt64/include/c++/16.1.0/ios \
  C:/msys64/ucrt64/include/c++/16.1.0/exception \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/exception_ptr.h \
@@ -155,12 +153,14 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/ctype_inline.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/basic_ios.tcc \
+ C:/msys64/ucrt64/include/c++/16.1.0/ostream \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream_print.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.tcc \
- C:/msys64/ucrt64/include/c++/16.1.0/istream \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
- C:/pyproject/calculator/src/internal/grammar.h \
- C:/pyproject/calculator/src/internal/utility.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/iostream \
  C:/msys64/ucrt64/include/c++/16.1.0/sstream \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
+ C:/pyproject/calculator/src/internal/grammar.h \
+ C:/pyproject/calculator/src/internal/utility.h \
  C:/pyproject/calculator/src/internal/token_stream.h

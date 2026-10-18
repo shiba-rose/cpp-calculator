@@ -11,6 +11,7 @@ static constexpr char quit = 'Q';
 static constexpr char print = ';';
 static constexpr char number = '8';
 static constexpr char name = 'a';
+static constexpr char end_of_input = 'E';
 
 // Represents a token read from the input.
 struct Token {
