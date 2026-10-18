@@ -71,124 +71,124 @@ include CMakeFiles/calculator.dir/flags.make
 CMakeFiles/calculator.dir/codegen:
 .PHONY : CMakeFiles/calculator.dir/codegen
 
-CMakeFiles/calculator.dir/sourse/calculator.cpp.obj: CMakeFiles/calculator.dir/flags.make
-CMakeFiles/calculator.dir/sourse/calculator.cpp.obj: C:/pyproject/calculator/sourse/calculator.cpp
-CMakeFiles/calculator.dir/sourse/calculator.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/calculator.dir/sourse/calculator.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/sourse/calculator.cpp.obj -MF CMakeFiles\calculator.dir\sourse\calculator.cpp.obj.d -o CMakeFiles\calculator.dir\sourse\calculator.cpp.obj -c C:\pyproject\calculator\sourse\calculator.cpp
+CMakeFiles/calculator.dir/src/calculator.cpp.obj: CMakeFiles/calculator.dir/flags.make
+CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/pyproject/calculator/src/calculator.cpp
+CMakeFiles/calculator.dir/src/calculator.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/calculator.dir/src/calculator.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/src/calculator.cpp.obj -MF CMakeFiles\calculator.dir\src\calculator.cpp.obj.d -o CMakeFiles\calculator.dir\src\calculator.cpp.obj -c C:\pyproject\calculator\src\calculator.cpp
 
-CMakeFiles/calculator.dir/sourse/calculator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/sourse/calculator.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\sourse\calculator.cpp > CMakeFiles\calculator.dir\sourse\calculator.cpp.i
+CMakeFiles/calculator.dir/src/calculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/src/calculator.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\src\calculator.cpp > CMakeFiles\calculator.dir\src\calculator.cpp.i
 
-CMakeFiles/calculator.dir/sourse/calculator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/sourse/calculator.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\sourse\calculator.cpp -o CMakeFiles\calculator.dir\sourse\calculator.cpp.s
+CMakeFiles/calculator.dir/src/calculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/src/calculator.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\src\calculator.cpp -o CMakeFiles\calculator.dir\src\calculator.cpp.s
 
-CMakeFiles/calculator.dir/sourse/Token.cpp.obj: CMakeFiles/calculator.dir/flags.make
-CMakeFiles/calculator.dir/sourse/Token.cpp.obj: C:/pyproject/calculator/sourse/Token.cpp
-CMakeFiles/calculator.dir/sourse/Token.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/calculator.dir/sourse/Token.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/sourse/Token.cpp.obj -MF CMakeFiles\calculator.dir\sourse\Token.cpp.obj.d -o CMakeFiles\calculator.dir\sourse\Token.cpp.obj -c C:\pyproject\calculator\sourse\Token.cpp
+CMakeFiles/calculator.dir/src/Token.cpp.obj: CMakeFiles/calculator.dir/flags.make
+CMakeFiles/calculator.dir/src/Token.cpp.obj: C:/pyproject/calculator/src/Token.cpp
+CMakeFiles/calculator.dir/src/Token.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/calculator.dir/src/Token.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/src/Token.cpp.obj -MF CMakeFiles\calculator.dir\src\Token.cpp.obj.d -o CMakeFiles\calculator.dir\src\Token.cpp.obj -c C:\pyproject\calculator\src\Token.cpp
 
-CMakeFiles/calculator.dir/sourse/Token.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/sourse/Token.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\sourse\Token.cpp > CMakeFiles\calculator.dir\sourse\Token.cpp.i
+CMakeFiles/calculator.dir/src/Token.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/src/Token.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\src\Token.cpp > CMakeFiles\calculator.dir\src\Token.cpp.i
 
-CMakeFiles/calculator.dir/sourse/Token.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/sourse/Token.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\sourse\Token.cpp -o CMakeFiles\calculator.dir\sourse\Token.cpp.s
+CMakeFiles/calculator.dir/src/Token.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/src/Token.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\src\Token.cpp -o CMakeFiles\calculator.dir\src\Token.cpp.s
 
-CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj: CMakeFiles/calculator.dir/flags.make
-CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj: C:/pyproject/calculator/sourse/Token_stream.cpp
-CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj -MF CMakeFiles\calculator.dir\sourse\Token_stream.cpp.obj.d -o CMakeFiles\calculator.dir\sourse\Token_stream.cpp.obj -c C:\pyproject\calculator\sourse\Token_stream.cpp
+CMakeFiles/calculator.dir/src/Token_stream.cpp.obj: CMakeFiles/calculator.dir/flags.make
+CMakeFiles/calculator.dir/src/Token_stream.cpp.obj: C:/pyproject/calculator/src/Token_stream.cpp
+CMakeFiles/calculator.dir/src/Token_stream.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/calculator.dir/src/Token_stream.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/src/Token_stream.cpp.obj -MF CMakeFiles\calculator.dir\src\Token_stream.cpp.obj.d -o CMakeFiles\calculator.dir\src\Token_stream.cpp.obj -c C:\pyproject\calculator\src\Token_stream.cpp
 
-CMakeFiles/calculator.dir/sourse/Token_stream.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/sourse/Token_stream.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\sourse\Token_stream.cpp > CMakeFiles\calculator.dir\sourse\Token_stream.cpp.i
+CMakeFiles/calculator.dir/src/Token_stream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/src/Token_stream.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\src\Token_stream.cpp > CMakeFiles\calculator.dir\src\Token_stream.cpp.i
 
-CMakeFiles/calculator.dir/sourse/Token_stream.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/sourse/Token_stream.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\sourse\Token_stream.cpp -o CMakeFiles\calculator.dir\sourse\Token_stream.cpp.s
+CMakeFiles/calculator.dir/src/Token_stream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/src/Token_stream.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\src\Token_stream.cpp -o CMakeFiles\calculator.dir\src\Token_stream.cpp.s
 
-CMakeFiles/calculator.dir/sourse/utility.cpp.obj: CMakeFiles/calculator.dir/flags.make
-CMakeFiles/calculator.dir/sourse/utility.cpp.obj: C:/pyproject/calculator/sourse/utility.cpp
-CMakeFiles/calculator.dir/sourse/utility.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/calculator.dir/sourse/utility.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/sourse/utility.cpp.obj -MF CMakeFiles\calculator.dir\sourse\utility.cpp.obj.d -o CMakeFiles\calculator.dir\sourse\utility.cpp.obj -c C:\pyproject\calculator\sourse\utility.cpp
+CMakeFiles/calculator.dir/src/utility.cpp.obj: CMakeFiles/calculator.dir/flags.make
+CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/pyproject/calculator/src/utility.cpp
+CMakeFiles/calculator.dir/src/utility.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/calculator.dir/src/utility.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/src/utility.cpp.obj -MF CMakeFiles\calculator.dir\src\utility.cpp.obj.d -o CMakeFiles\calculator.dir\src\utility.cpp.obj -c C:\pyproject\calculator\src\utility.cpp
 
-CMakeFiles/calculator.dir/sourse/utility.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/sourse/utility.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\sourse\utility.cpp > CMakeFiles\calculator.dir\sourse\utility.cpp.i
+CMakeFiles/calculator.dir/src/utility.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/src/utility.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\src\utility.cpp > CMakeFiles\calculator.dir\src\utility.cpp.i
 
-CMakeFiles/calculator.dir/sourse/utility.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/sourse/utility.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\sourse\utility.cpp -o CMakeFiles\calculator.dir\sourse\utility.cpp.s
+CMakeFiles/calculator.dir/src/utility.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/src/utility.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\src\utility.cpp -o CMakeFiles\calculator.dir\src\utility.cpp.s
 
-CMakeFiles/calculator.dir/sourse/variable.cpp.obj: CMakeFiles/calculator.dir/flags.make
-CMakeFiles/calculator.dir/sourse/variable.cpp.obj: C:/pyproject/calculator/sourse/variable.cpp
-CMakeFiles/calculator.dir/sourse/variable.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/calculator.dir/sourse/variable.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/sourse/variable.cpp.obj -MF CMakeFiles\calculator.dir\sourse\variable.cpp.obj.d -o CMakeFiles\calculator.dir\sourse\variable.cpp.obj -c C:\pyproject\calculator\sourse\variable.cpp
+CMakeFiles/calculator.dir/src/variable.cpp.obj: CMakeFiles/calculator.dir/flags.make
+CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/pyproject/calculator/src/variable.cpp
+CMakeFiles/calculator.dir/src/variable.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/calculator.dir/src/variable.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/src/variable.cpp.obj -MF CMakeFiles\calculator.dir\src\variable.cpp.obj.d -o CMakeFiles\calculator.dir\src\variable.cpp.obj -c C:\pyproject\calculator\src\variable.cpp
 
-CMakeFiles/calculator.dir/sourse/variable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/sourse/variable.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\sourse\variable.cpp > CMakeFiles\calculator.dir\sourse\variable.cpp.i
+CMakeFiles/calculator.dir/src/variable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/src/variable.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\src\variable.cpp > CMakeFiles\calculator.dir\src\variable.cpp.i
 
-CMakeFiles/calculator.dir/sourse/variable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/sourse/variable.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\sourse\variable.cpp -o CMakeFiles\calculator.dir\sourse\variable.cpp.s
+CMakeFiles/calculator.dir/src/variable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/src/variable.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\src\variable.cpp -o CMakeFiles\calculator.dir\src\variable.cpp.s
 
-CMakeFiles/calculator.dir/sourse/grammar.cpp.obj: CMakeFiles/calculator.dir/flags.make
-CMakeFiles/calculator.dir/sourse/grammar.cpp.obj: C:/pyproject/calculator/sourse/grammar.cpp
-CMakeFiles/calculator.dir/sourse/grammar.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/calculator.dir/sourse/grammar.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/sourse/grammar.cpp.obj -MF CMakeFiles\calculator.dir\sourse\grammar.cpp.obj.d -o CMakeFiles\calculator.dir\sourse\grammar.cpp.obj -c C:\pyproject\calculator\sourse\grammar.cpp
+CMakeFiles/calculator.dir/src/grammar.cpp.obj: CMakeFiles/calculator.dir/flags.make
+CMakeFiles/calculator.dir/src/grammar.cpp.obj: C:/pyproject/calculator/src/grammar.cpp
+CMakeFiles/calculator.dir/src/grammar.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/calculator.dir/src/grammar.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/src/grammar.cpp.obj -MF CMakeFiles\calculator.dir\src\grammar.cpp.obj.d -o CMakeFiles\calculator.dir\src\grammar.cpp.obj -c C:\pyproject\calculator\src\grammar.cpp
 
-CMakeFiles/calculator.dir/sourse/grammar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/sourse/grammar.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\sourse\grammar.cpp > CMakeFiles\calculator.dir\sourse\grammar.cpp.i
+CMakeFiles/calculator.dir/src/grammar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/src/grammar.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\src\grammar.cpp > CMakeFiles\calculator.dir\src\grammar.cpp.i
 
-CMakeFiles/calculator.dir/sourse/grammar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/sourse/grammar.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\sourse\grammar.cpp -o CMakeFiles\calculator.dir\sourse\grammar.cpp.s
+CMakeFiles/calculator.dir/src/grammar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/src/grammar.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\src\grammar.cpp -o CMakeFiles\calculator.dir\src\grammar.cpp.s
 
-CMakeFiles/calculator.dir/sourse/main.cpp.obj: CMakeFiles/calculator.dir/flags.make
-CMakeFiles/calculator.dir/sourse/main.cpp.obj: C:/pyproject/calculator/sourse/main.cpp
-CMakeFiles/calculator.dir/sourse/main.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/calculator.dir/sourse/main.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/sourse/main.cpp.obj -MF CMakeFiles\calculator.dir\sourse\main.cpp.obj.d -o CMakeFiles\calculator.dir\sourse\main.cpp.obj -c C:\pyproject\calculator\sourse\main.cpp
+CMakeFiles/calculator.dir/src/main.cpp.obj: CMakeFiles/calculator.dir/flags.make
+CMakeFiles/calculator.dir/src/main.cpp.obj: C:/pyproject/calculator/src/main.cpp
+CMakeFiles/calculator.dir/src/main.cpp.obj: CMakeFiles/calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\pyproject\calculator\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/calculator.dir/src/main.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculator.dir/src/main.cpp.obj -MF CMakeFiles\calculator.dir\src\main.cpp.obj.d -o CMakeFiles\calculator.dir\src\main.cpp.obj -c C:\pyproject\calculator\src\main.cpp
 
-CMakeFiles/calculator.dir/sourse/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/sourse/main.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\sourse\main.cpp > CMakeFiles\calculator.dir\sourse\main.cpp.i
+CMakeFiles/calculator.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calculator.dir/src/main.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\pyproject\calculator\src\main.cpp > CMakeFiles\calculator.dir\src\main.cpp.i
 
-CMakeFiles/calculator.dir/sourse/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/sourse/main.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\sourse\main.cpp -o CMakeFiles\calculator.dir\sourse\main.cpp.s
+CMakeFiles/calculator.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calculator.dir/src/main.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\pyproject\calculator\src\main.cpp -o CMakeFiles\calculator.dir\src\main.cpp.s
 
 # Object files for target calculator
 calculator_OBJECTS = \
-"CMakeFiles/calculator.dir/sourse/calculator.cpp.obj" \
-"CMakeFiles/calculator.dir/sourse/Token.cpp.obj" \
-"CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj" \
-"CMakeFiles/calculator.dir/sourse/utility.cpp.obj" \
-"CMakeFiles/calculator.dir/sourse/variable.cpp.obj" \
-"CMakeFiles/calculator.dir/sourse/grammar.cpp.obj" \
-"CMakeFiles/calculator.dir/sourse/main.cpp.obj"
+"CMakeFiles/calculator.dir/src/calculator.cpp.obj" \
+"CMakeFiles/calculator.dir/src/Token.cpp.obj" \
+"CMakeFiles/calculator.dir/src/Token_stream.cpp.obj" \
+"CMakeFiles/calculator.dir/src/utility.cpp.obj" \
+"CMakeFiles/calculator.dir/src/variable.cpp.obj" \
+"CMakeFiles/calculator.dir/src/grammar.cpp.obj" \
+"CMakeFiles/calculator.dir/src/main.cpp.obj"
 
 # External object files for target calculator
 calculator_EXTERNAL_OBJECTS =
 
-calculator.exe: CMakeFiles/calculator.dir/sourse/calculator.cpp.obj
-calculator.exe: CMakeFiles/calculator.dir/sourse/Token.cpp.obj
-calculator.exe: CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj
-calculator.exe: CMakeFiles/calculator.dir/sourse/utility.cpp.obj
-calculator.exe: CMakeFiles/calculator.dir/sourse/variable.cpp.obj
-calculator.exe: CMakeFiles/calculator.dir/sourse/grammar.cpp.obj
-calculator.exe: CMakeFiles/calculator.dir/sourse/main.cpp.obj
+calculator.exe: CMakeFiles/calculator.dir/src/calculator.cpp.obj
+calculator.exe: CMakeFiles/calculator.dir/src/Token.cpp.obj
+calculator.exe: CMakeFiles/calculator.dir/src/Token_stream.cpp.obj
+calculator.exe: CMakeFiles/calculator.dir/src/utility.cpp.obj
+calculator.exe: CMakeFiles/calculator.dir/src/variable.cpp.obj
+calculator.exe: CMakeFiles/calculator.dir/src/grammar.cpp.obj
+calculator.exe: CMakeFiles/calculator.dir/src/main.cpp.obj
 calculator.exe: CMakeFiles/calculator.dir/build.make
 calculator.exe: CMakeFiles/calculator.dir/linkLibs.rsp
 calculator.exe: CMakeFiles/calculator.dir/objects1.rsp

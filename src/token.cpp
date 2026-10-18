@@ -1,4 +1,4 @@
-#include "Token.h"
+#include "token.h"
 #include <string>
 
 Token::Token(char ch) :kind(ch), value(0) { }

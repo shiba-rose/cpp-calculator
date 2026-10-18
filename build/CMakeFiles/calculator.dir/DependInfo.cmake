@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/pyproject/calculator/sourse/Token.cpp" "CMakeFiles/calculator.dir/sourse/Token.cpp.obj" "gcc" "CMakeFiles/calculator.dir/sourse/Token.cpp.obj.d"
-  "C:/pyproject/calculator/sourse/Token_stream.cpp" "CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj" "gcc" "CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj.d"
-  "C:/pyproject/calculator/sourse/calculator.cpp" "CMakeFiles/calculator.dir/sourse/calculator.cpp.obj" "gcc" "CMakeFiles/calculator.dir/sourse/calculator.cpp.obj.d"
-  "C:/pyproject/calculator/sourse/grammar.cpp" "CMakeFiles/calculator.dir/sourse/grammar.cpp.obj" "gcc" "CMakeFiles/calculator.dir/sourse/grammar.cpp.obj.d"
-  "C:/pyproject/calculator/sourse/main.cpp" "CMakeFiles/calculator.dir/sourse/main.cpp.obj" "gcc" "CMakeFiles/calculator.dir/sourse/main.cpp.obj.d"
-  "C:/pyproject/calculator/sourse/utility.cpp" "CMakeFiles/calculator.dir/sourse/utility.cpp.obj" "gcc" "CMakeFiles/calculator.dir/sourse/utility.cpp.obj.d"
-  "C:/pyproject/calculator/sourse/variable.cpp" "CMakeFiles/calculator.dir/sourse/variable.cpp.obj" "gcc" "CMakeFiles/calculator.dir/sourse/variable.cpp.obj.d"
+  "C:/pyproject/calculator/src/Token.cpp" "CMakeFiles/calculator.dir/src/Token.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/Token.cpp.obj.d"
+  "C:/pyproject/calculator/src/Token_stream.cpp" "CMakeFiles/calculator.dir/src/Token_stream.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/Token_stream.cpp.obj.d"
+  "C:/pyproject/calculator/src/calculator.cpp" "CMakeFiles/calculator.dir/src/calculator.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/calculator.cpp.obj.d"
+  "C:/pyproject/calculator/src/grammar.cpp" "CMakeFiles/calculator.dir/src/grammar.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/grammar.cpp.obj.d"
+  "C:/pyproject/calculator/src/main.cpp" "CMakeFiles/calculator.dir/src/main.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/main.cpp.obj.d"
+  "C:/pyproject/calculator/src/utility.cpp" "CMakeFiles/calculator.dir/src/utility.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/utility.cpp.obj.d"
+  "C:/pyproject/calculator/src/variable.cpp" "CMakeFiles/calculator.dir/src/variable.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/variable.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

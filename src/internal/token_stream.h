@@ -1,6 +1,6 @@
 #ifndef TOKEN_STREAM_H
 #define TOKEN_STREAM_H
-#include "Token.h"
+#include "token.h"
 
 // Reads tokens from the input and supports one-token buffering.
 

@@ -6,25 +6,27 @@ project(Calculator
 )
 
 set(HEADERS
-    sourse/calculator.h
-    sourse/Token.h
-    sourse/Token_stream.h
-    sourse/grammar.h
-    sourse/utility.h
-    sourse/variable.h
+    include/calculator/calculator.h
+    src/internal/Token.h
+    src/internal/Token_stream.h
+    src/internal/grammar.h
+    src/internal/utility.h
+    src/internal/variable.h
 )
 
 set(SOURCES
-    sourse/calculator.cpp
-    sourse/Token.cpp
-    sourse/Token_stream.cpp
-    sourse/utility.cpp
-    sourse/variable.cpp
-    sourse/grammar.cpp
-    sourse/main.cpp
+    src/calculator.cpp
+    src/Token.cpp
+    src/Token_stream.cpp
+    src/utility.cpp
+    src/variable.cpp
+    src/grammar.cpp
+    src/main.cpp
 )
 
 set(executable_name calculator)
 
 add_executable(${executable_name} ${SOURCES} ${HEADERS})
+
+
 

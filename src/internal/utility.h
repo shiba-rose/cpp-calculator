@@ -6,8 +6,8 @@
 #include <stdexcept>
 #include <string>
 
-#include "Token.h"
-#include "Token_stream.h"
+#include "token.h"
+#include "token_stream.h"
 
 
 void clean_up_mess(); 

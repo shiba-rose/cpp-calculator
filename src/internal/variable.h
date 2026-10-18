@@ -4,8 +4,8 @@
 #include <string>
 #include <vector>
 
-#include "Token.h"
-#include "Token_stream.h"	
+#include "token.h"
+#include "token_stream.h"	
 #include "utility.h"		
 
 //function for finding the value of a variable

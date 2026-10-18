@@ -128,173 +128,173 @@ calculator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/build
 .PHONY : calculator/fast
 
-sourse/Token.obj: sourse/Token.cpp.obj
-.PHONY : sourse/Token.obj
+src/Token.obj: src/Token.cpp.obj
+.PHONY : src/Token.obj
 
 # target to build an object file
-sourse/Token.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/Token.cpp.obj
-.PHONY : sourse/Token.cpp.obj
+src/Token.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token.cpp.obj
+.PHONY : src/Token.cpp.obj
 
-sourse/Token.i: sourse/Token.cpp.i
-.PHONY : sourse/Token.i
+src/Token.i: src/Token.cpp.i
+.PHONY : src/Token.i
 
 # target to preprocess a source file
-sourse/Token.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/Token.cpp.i
-.PHONY : sourse/Token.cpp.i
+src/Token.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token.cpp.i
+.PHONY : src/Token.cpp.i
 
-sourse/Token.s: sourse/Token.cpp.s
-.PHONY : sourse/Token.s
+src/Token.s: src/Token.cpp.s
+.PHONY : src/Token.s
 
 # target to generate assembly for a file
-sourse/Token.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/Token.cpp.s
-.PHONY : sourse/Token.cpp.s
+src/Token.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token.cpp.s
+.PHONY : src/Token.cpp.s
 
-sourse/Token_stream.obj: sourse/Token_stream.cpp.obj
-.PHONY : sourse/Token_stream.obj
+src/Token_stream.obj: src/Token_stream.cpp.obj
+.PHONY : src/Token_stream.obj
 
 # target to build an object file
-sourse/Token_stream.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/Token_stream.cpp.obj
-.PHONY : sourse/Token_stream.cpp.obj
+src/Token_stream.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token_stream.cpp.obj
+.PHONY : src/Token_stream.cpp.obj
 
-sourse/Token_stream.i: sourse/Token_stream.cpp.i
-.PHONY : sourse/Token_stream.i
+src/Token_stream.i: src/Token_stream.cpp.i
+.PHONY : src/Token_stream.i
 
 # target to preprocess a source file
-sourse/Token_stream.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/Token_stream.cpp.i
-.PHONY : sourse/Token_stream.cpp.i
+src/Token_stream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token_stream.cpp.i
+.PHONY : src/Token_stream.cpp.i
 
-sourse/Token_stream.s: sourse/Token_stream.cpp.s
-.PHONY : sourse/Token_stream.s
+src/Token_stream.s: src/Token_stream.cpp.s
+.PHONY : src/Token_stream.s
 
 # target to generate assembly for a file
-sourse/Token_stream.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/Token_stream.cpp.s
-.PHONY : sourse/Token_stream.cpp.s
+src/Token_stream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token_stream.cpp.s
+.PHONY : src/Token_stream.cpp.s
 
-sourse/calculator.obj: sourse/calculator.cpp.obj
-.PHONY : sourse/calculator.obj
+src/calculator.obj: src/calculator.cpp.obj
+.PHONY : src/calculator.obj
 
 # target to build an object file
-sourse/calculator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/calculator.cpp.obj
-.PHONY : sourse/calculator.cpp.obj
+src/calculator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/calculator.cpp.obj
+.PHONY : src/calculator.cpp.obj
 
-sourse/calculator.i: sourse/calculator.cpp.i
-.PHONY : sourse/calculator.i
+src/calculator.i: src/calculator.cpp.i
+.PHONY : src/calculator.i
 
 # target to preprocess a source file
-sourse/calculator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/calculator.cpp.i
-.PHONY : sourse/calculator.cpp.i
+src/calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/calculator.cpp.i
+.PHONY : src/calculator.cpp.i
 
-sourse/calculator.s: sourse/calculator.cpp.s
-.PHONY : sourse/calculator.s
+src/calculator.s: src/calculator.cpp.s
+.PHONY : src/calculator.s
 
 # target to generate assembly for a file
-sourse/calculator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/calculator.cpp.s
-.PHONY : sourse/calculator.cpp.s
+src/calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/calculator.cpp.s
+.PHONY : src/calculator.cpp.s
 
-sourse/grammar.obj: sourse/grammar.cpp.obj
-.PHONY : sourse/grammar.obj
+src/grammar.obj: src/grammar.cpp.obj
+.PHONY : src/grammar.obj
 
 # target to build an object file
-sourse/grammar.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/grammar.cpp.obj
-.PHONY : sourse/grammar.cpp.obj
+src/grammar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/grammar.cpp.obj
+.PHONY : src/grammar.cpp.obj
 
-sourse/grammar.i: sourse/grammar.cpp.i
-.PHONY : sourse/grammar.i
+src/grammar.i: src/grammar.cpp.i
+.PHONY : src/grammar.i
 
 # target to preprocess a source file
-sourse/grammar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/grammar.cpp.i
-.PHONY : sourse/grammar.cpp.i
+src/grammar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/grammar.cpp.i
+.PHONY : src/grammar.cpp.i
 
-sourse/grammar.s: sourse/grammar.cpp.s
-.PHONY : sourse/grammar.s
+src/grammar.s: src/grammar.cpp.s
+.PHONY : src/grammar.s
 
 # target to generate assembly for a file
-sourse/grammar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/grammar.cpp.s
-.PHONY : sourse/grammar.cpp.s
+src/grammar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/grammar.cpp.s
+.PHONY : src/grammar.cpp.s
 
-sourse/main.obj: sourse/main.cpp.obj
-.PHONY : sourse/main.obj
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-sourse/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/main.cpp.obj
-.PHONY : sourse/main.cpp.obj
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
 
-sourse/main.i: sourse/main.cpp.i
-.PHONY : sourse/main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-sourse/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/main.cpp.i
-.PHONY : sourse/main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-sourse/main.s: sourse/main.cpp.s
-.PHONY : sourse/main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-sourse/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/main.cpp.s
-.PHONY : sourse/main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-sourse/utility.obj: sourse/utility.cpp.obj
-.PHONY : sourse/utility.obj
+src/utility.obj: src/utility.cpp.obj
+.PHONY : src/utility.obj
 
 # target to build an object file
-sourse/utility.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/utility.cpp.obj
-.PHONY : sourse/utility.cpp.obj
+src/utility.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/utility.cpp.obj
+.PHONY : src/utility.cpp.obj
 
-sourse/utility.i: sourse/utility.cpp.i
-.PHONY : sourse/utility.i
+src/utility.i: src/utility.cpp.i
+.PHONY : src/utility.i
 
 # target to preprocess a source file
-sourse/utility.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/utility.cpp.i
-.PHONY : sourse/utility.cpp.i
+src/utility.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/utility.cpp.i
+.PHONY : src/utility.cpp.i
 
-sourse/utility.s: sourse/utility.cpp.s
-.PHONY : sourse/utility.s
+src/utility.s: src/utility.cpp.s
+.PHONY : src/utility.s
 
 # target to generate assembly for a file
-sourse/utility.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/utility.cpp.s
-.PHONY : sourse/utility.cpp.s
+src/utility.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/utility.cpp.s
+.PHONY : src/utility.cpp.s
 
-sourse/variable.obj: sourse/variable.cpp.obj
-.PHONY : sourse/variable.obj
+src/variable.obj: src/variable.cpp.obj
+.PHONY : src/variable.obj
 
 # target to build an object file
-sourse/variable.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/variable.cpp.obj
-.PHONY : sourse/variable.cpp.obj
+src/variable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/variable.cpp.obj
+.PHONY : src/variable.cpp.obj
 
-sourse/variable.i: sourse/variable.cpp.i
-.PHONY : sourse/variable.i
+src/variable.i: src/variable.cpp.i
+.PHONY : src/variable.i
 
 # target to preprocess a source file
-sourse/variable.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/variable.cpp.i
-.PHONY : sourse/variable.cpp.i
+src/variable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/variable.cpp.i
+.PHONY : src/variable.cpp.i
 
-sourse/variable.s: sourse/variable.cpp.s
-.PHONY : sourse/variable.s
+src/variable.s: src/variable.cpp.s
+.PHONY : src/variable.s
 
 # target to generate assembly for a file
-sourse/variable.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/sourse/variable.cpp.s
-.PHONY : sourse/variable.cpp.s
+src/variable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/variable.cpp.s
+.PHONY : src/variable.cpp.s
 
 # Help Target
 help:
@@ -305,27 +305,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... calculator
-	@echo ... sourse/Token.obj
-	@echo ... sourse/Token.i
-	@echo ... sourse/Token.s
-	@echo ... sourse/Token_stream.obj
-	@echo ... sourse/Token_stream.i
-	@echo ... sourse/Token_stream.s
-	@echo ... sourse/calculator.obj
-	@echo ... sourse/calculator.i
-	@echo ... sourse/calculator.s
-	@echo ... sourse/grammar.obj
-	@echo ... sourse/grammar.i
-	@echo ... sourse/grammar.s
-	@echo ... sourse/main.obj
-	@echo ... sourse/main.i
-	@echo ... sourse/main.s
-	@echo ... sourse/utility.obj
-	@echo ... sourse/utility.i
-	@echo ... sourse/utility.s
-	@echo ... sourse/variable.obj
-	@echo ... sourse/variable.i
-	@echo ... sourse/variable.s
+	@echo ... src/Token.obj
+	@echo ... src/Token.i
+	@echo ... src/Token.s
+	@echo ... src/Token_stream.obj
+	@echo ... src/Token_stream.i
+	@echo ... src/Token_stream.s
+	@echo ... src/calculator.obj
+	@echo ... src/calculator.i
+	@echo ... src/calculator.s
+	@echo ... src/grammar.obj
+	@echo ... src/grammar.i
+	@echo ... src/grammar.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/utility.obj
+	@echo ... src/utility.i
+	@echo ... src/utility.s
+	@echo ... src/variable.obj
+	@echo ... src/variable.i
+	@echo ... src/variable.s
 .PHONY : help
 
 
