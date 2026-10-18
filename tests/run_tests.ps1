@@ -38,7 +38,7 @@ foreach ($case in $cases) {
     # A fresh process isolates the symbol table between test cases.
     $programInput = @($inputLine, "quit")
     $output = $programInput | & $exe 2>&1 | Out-String
-    $output = $output -replace "\`r", ""
+    $output = $output -replace "\r", ""
     $found = [regex]::Matches($output, "=\s*(-?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?)\s*(?:\n|$)") |
         ForEach-Object { $_.Groups[1].Value }
 
@@ -62,9 +62,9 @@ foreach ($case in $cases) {
     } else {
         $failed++
         $details.Add("FAIL | $inputLine | expected: $($expected -join ', ') | actual: $($found -join ', ')")
-        $details.Add("Output: $($output.Trim() -replace "\`n", " / ")")
+        $details.Add("Output: $($output.Trim() -replace "\n", " / ")")
     }
-    $actualLog.Add("$inputLine\`n$output")
+    $actualLog.Add("$inputLine`n$output")
 }
 
 $details | Set-Content -Path $diffFile -Encoding utf8
