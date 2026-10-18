@@ -74,6 +74,7 @@ double Symbol_table::define_name(){
 	}
 	if (t.kind != 'a') error("name expected in declaration");
 	std::string name = t.name;
+	write_primer(name);
 	Token t2 = ts.get();
 	if (t2.kind != '=') 
 	{
@@ -89,6 +90,7 @@ double Symbol_table::define_name(){
 
 		return var_table[find_name_index(name)].value;
 	}
+	write_primer(t2.kind);
 	double d = expression();
 	if (symbol_table.is_declared(name))
 	{

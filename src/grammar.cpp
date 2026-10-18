@@ -4,22 +4,46 @@
 #include "utility.h"
 // calculator grammar  
  
+std::string primer;
+
+void write_primer(std::string str)
+{
+	primer = primer + str + " ";
+}
+
+void write_primer(double value)
+{
+	std::string str = std::to_string(value);
+	primer = primer + str + " ";
+}
+void write_primer(char ch)
+{
+	std::string str {ch};
+	primer = primer + str + " ";
+}
+
+
 double primary()
 {
 	Token t = ts.get();
 	switch (t.kind) {
 	case '(':
 	{	
+		write_primer(t.kind);
 		double d = expression();
 	    t = ts.get();
 		if (t.kind != ')') error("')' expected");
+		write_primer(t.kind);
 		return d;
 	}
 	case '-':
+		write_primer(t.kind);
 		return -primary();
 	case number:
+		write_primer(t.value);
 		return t.value;
 	case name:
+		write_primer(t.name);
 		return symbol_table.get_value(t.name);
 	default:
 		error("primary expected");
@@ -33,11 +57,13 @@ double term()
 		Token t = ts.get();
 		switch (t.kind) {
 		case '*':
+			write_primer(t.kind);
 			left *= primary();
 			break;
 		case '/':
 		{	double d = primary();
 		if (d == 0) error("divide by zero");
+		write_primer(t.kind);
 		left /= d;
 		break;
 		}
@@ -55,9 +81,11 @@ double expression()
 		Token t = ts.get();
 		switch (t.kind) {
 		case '+':
+			write_primer(t.kind);
 			left += term();
 			break;
 		case '-':
+			write_primer(t.kind);
 			left -= term();
 			break;
 		default:
