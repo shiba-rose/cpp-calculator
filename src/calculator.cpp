@@ -7,13 +7,15 @@
 
 
 
-void calculate()
+std::string calculate(std::string str)
 {
-	for(;;) try {
+	std::string result;
+	for(;;) 
+	try {
 		std::cout << prompt;
 		Token t = ts.get();
 		while (t.kind == print) t = ts.get();
-		if (t.kind == quit) return;
+		if (t.kind == quit) throw "quit";
 		ts.unget(t);
 		std::cout << result << statement() << std::endl;
 	}
@@ -21,4 +23,6 @@ void calculate()
 		std::cerr << e.what() << std::endl;
 		clean_up_mess();
 	}
+	
+	return result;
 }

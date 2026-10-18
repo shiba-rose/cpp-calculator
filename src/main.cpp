@@ -1,7 +1,32 @@
 #include <iostream>
 #include <exception>
+#include <sstream>
+#include <string>
 #include "calculator.h"
 
+
+
+void run_calculator()
+{
+	std::cout << ">";
+	for(;;) 
+	try {
+	std::string input;
+	std::getline(std::cin, input);
+	std::string result {calculate(input)};
+	std::cout << result << std::endl;
+	}
+
+	catch (std::string error_message){
+		return;
+	}
+
+	catch (std::runtime_error& e) {
+		std::cerr << e.what() << std::endl;
+		char c;
+		while (std::cin >> c && c != ';');
+	}
+}
 
 int main()
 try {
