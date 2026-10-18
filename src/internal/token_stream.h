@@ -25,5 +25,5 @@ public:
 };
 
 extern Token_stream ts;
-
+extern std::string primer;
 #endif

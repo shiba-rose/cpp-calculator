@@ -3,7 +3,7 @@
 #include "utility.h"
 
 Token_stream ts;
-
+std::string primer;
 // Reads input and converts it into tokens
 
 Token Token_stream::get()
@@ -23,7 +23,11 @@ Token Token_stream::get()
 	case '%':
 	case ';':
 	case '=':
+	{
+		std::string s {ch};
+		primer = primer + s + " ";
 		return Token(ch);
+	}
 	case '.':
 	case '0':
 	case '1':
@@ -43,6 +47,8 @@ Token Token_stream::get()
 		clean_up_mess();
     	error("Invalid number");
 	}
+	std::string s = std::to_string(val);
+	primer = primer + s + " ";
 	return Token(number, val);
 	}
 	default:
@@ -55,6 +61,7 @@ Token Token_stream::get()
 			if (s == "quit") return Token(quit);
 			if (s == "const") return Token(const0);
 			if (s == "unconst") return Token(unconst0);
+			primer = primer + s + " ";
 			return Token(name, s);
 		}
 		error("Bad token");	

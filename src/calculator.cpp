@@ -30,12 +30,14 @@ std::string calculator(std::string str)
             ts.unget(t);
             std::ostringstream output;
             output << result << statement() << '\n';
-            str_result += output.str();
+            str_result = str_result + primer + output.str();
         }
         catch (const std::runtime_error& e) {
             str_result += std::string("Error: ") + e.what() + '\n';
             clean_up_mess();
         }
+    primer ="";
     }
+    
     return str_result;
 }
