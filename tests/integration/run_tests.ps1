@@ -1,16 +1,17 @@
 $testsDir = $PSScriptRoot
-$root = Split-Path -Parent $testsDir
+$root = Split-Path -Parent (Split-Path -Parent $testsDir)
 
 $exe = Join-Path $root "build\calculator.exe"
-$inputFile = Join-Path $testsDir "input.txt"
-$expectedFile = Join-Path $testsDir "expected.txt"
+$dataDir = Join-Path $testsDir "data"
+$inputFile = Join-Path $dataDir "input.txt"
+$expectedFile = Join-Path $dataDir "expected.txt"
 $resultDir = Join-Path $testsDir "results"
 
 $actualFile = Join-Path $resultDir "actual.txt"
 $diffFile = Join-Path $resultDir "diff.txt"
 
 if (!(Test-Path $exe)) {
-    Write-Host "ERROR: calculator.exe not found. Build the project first." -ForegroundColor Red
+    Write-Host "ERROR: tests/integration/data/input.txt or expected.txt not found." -ForegroundColor Red
     exit 1
 }
 
