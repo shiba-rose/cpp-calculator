@@ -7,8 +7,8 @@ project(Calculator
 
 set(HEADERS
     include/calculator/calculator.h
-    src/internal/Token.h
-    src/internal/Token_stream.h
+    src/internal/token.h
+    src/internal/token_stream.h
     src/internal/grammar.h
     src/internal/utility.h
     src/internal/variable.h
@@ -16,8 +16,8 @@ set(HEADERS
 
 set(SOURCES
     src/calculator.cpp
-    src/Token.cpp
-    src/Token_stream.cpp
+    src/token.cpp
+    src/token_stream.cpp
     src/utility.cpp
     src/variable.cpp
     src/grammar.cpp
@@ -27,6 +27,9 @@ set(SOURCES
 set(executable_name calculator)
 
 add_executable(${executable_name} ${SOURCES} ${HEADERS})
-
+target_include_directories(${executable_name} PRIVATE
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/calculator"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/internal"
+)
 
 

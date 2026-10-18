@@ -1,6 +1,7 @@
-CMakeFiles/calculator.dir/sourse/utility.cpp.obj: \
- C:\pyproject\calculator\sourse\utility.cpp \
- C:\pyproject\calculator\sourse\utility.h \
+CMakeFiles/calculator.dir/src/grammar.cpp.obj: \
+ C:\pyproject\calculator\src\grammar.cpp \
+ C:/pyproject/calculator/src/internal/token_stream.h \
+ C:/pyproject/calculator/src/internal/token.h \
  C:/msys64/ucrt64/include/c++/16.1.0/string \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -109,6 +110,14 @@ CMakeFiles/calculator.dir/sourse/utility.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/tuple \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
+ C:/pyproject/calculator/src/internal/variable.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/vector \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_uninitialized.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_vector.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_bvector.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/vector.tcc \
+ C:/pyproject/calculator/src/internal/token_stream.h \
+ C:/pyproject/calculator/src/internal/utility.h \
  C:/msys64/ucrt64/include/c++/16.1.0/sstream \
  C:/msys64/ucrt64/include/c++/16.1.0/istream \
  C:/msys64/ucrt64/include/c++/16.1.0/ios \
@@ -158,5 +167,5 @@ CMakeFiles/calculator.dir/sourse/utility.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc \
- C:\pyproject\calculator\sourse\Token.h \
- C:\pyproject\calculator\sourse\Token_stream.h
+ C:/pyproject/calculator/src/internal/grammar.h \
+ C:/pyproject/calculator/src/internal/utility.h

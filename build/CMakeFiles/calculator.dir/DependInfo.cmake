@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/pyproject/calculator/src/Token.cpp" "CMakeFiles/calculator.dir/src/Token.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/Token.cpp.obj.d"
-  "C:/pyproject/calculator/src/Token_stream.cpp" "CMakeFiles/calculator.dir/src/Token_stream.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/Token_stream.cpp.obj.d"
   "C:/pyproject/calculator/src/calculator.cpp" "CMakeFiles/calculator.dir/src/calculator.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/calculator.cpp.obj.d"
   "C:/pyproject/calculator/src/grammar.cpp" "CMakeFiles/calculator.dir/src/grammar.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/grammar.cpp.obj.d"
   "C:/pyproject/calculator/src/main.cpp" "CMakeFiles/calculator.dir/src/main.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/main.cpp.obj.d"
+  "C:/pyproject/calculator/src/token.cpp" "CMakeFiles/calculator.dir/src/token.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/token.cpp.obj.d"
+  "C:/pyproject/calculator/src/token_stream.cpp" "CMakeFiles/calculator.dir/src/token_stream.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/token_stream.cpp.obj.d"
   "C:/pyproject/calculator/src/utility.cpp" "CMakeFiles/calculator.dir/src/utility.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/utility.cpp.obj.d"
   "C:/pyproject/calculator/src/variable.cpp" "CMakeFiles/calculator.dir/src/variable.cpp.obj" "gcc" "CMakeFiles/calculator.dir/src/variable.cpp.obj.d"
   )

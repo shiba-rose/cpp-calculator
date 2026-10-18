@@ -13,7 +13,8 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -28,6 +29,12 @@
 				"command" : 0,
 				"file" : 0,
 				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
 				"parent" : 0
 			}
 		]
@@ -44,6 +51,17 @@
 			[
 				{
 					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "C:/pyproject/calculator/include/calculator"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/pyproject/calculator/src/internal"
 				}
 			],
 			"language" : "CXX",
@@ -129,7 +147,7 @@
 				1
 			],
 			"compileGroupIndex" : 0,
-			"path" : "src/Token.cpp",
+			"path" : "src/token.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -139,7 +157,7 @@
 				1
 			],
 			"compileGroupIndex" : 0,
-			"path" : "src/Token_stream.cpp",
+			"path" : "src/token_stream.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -197,7 +215,7 @@
 			[
 				1
 			],
-			"path" : "src/internal/Token.h",
+			"path" : "src/internal/token.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -206,7 +224,7 @@
 			[
 				1
 			],
-			"path" : "src/internal/Token_stream.h",
+			"path" : "src/internal/token_stream.h",
 			"sourceGroupIndex" : 1
 		},
 		{

@@ -128,54 +128,6 @@ calculator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/build
 .PHONY : calculator/fast
 
-src/Token.obj: src/Token.cpp.obj
-.PHONY : src/Token.obj
-
-# target to build an object file
-src/Token.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token.cpp.obj
-.PHONY : src/Token.cpp.obj
-
-src/Token.i: src/Token.cpp.i
-.PHONY : src/Token.i
-
-# target to preprocess a source file
-src/Token.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token.cpp.i
-.PHONY : src/Token.cpp.i
-
-src/Token.s: src/Token.cpp.s
-.PHONY : src/Token.s
-
-# target to generate assembly for a file
-src/Token.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token.cpp.s
-.PHONY : src/Token.cpp.s
-
-src/Token_stream.obj: src/Token_stream.cpp.obj
-.PHONY : src/Token_stream.obj
-
-# target to build an object file
-src/Token_stream.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token_stream.cpp.obj
-.PHONY : src/Token_stream.cpp.obj
-
-src/Token_stream.i: src/Token_stream.cpp.i
-.PHONY : src/Token_stream.i
-
-# target to preprocess a source file
-src/Token_stream.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token_stream.cpp.i
-.PHONY : src/Token_stream.cpp.i
-
-src/Token_stream.s: src/Token_stream.cpp.s
-.PHONY : src/Token_stream.s
-
-# target to generate assembly for a file
-src/Token_stream.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/Token_stream.cpp.s
-.PHONY : src/Token_stream.cpp.s
-
 src/calculator.obj: src/calculator.cpp.obj
 .PHONY : src/calculator.obj
 
@@ -248,6 +200,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/token.obj: src/token.cpp.obj
+.PHONY : src/token.obj
+
+# target to build an object file
+src/token.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/token.cpp.obj
+.PHONY : src/token.cpp.obj
+
+src/token.i: src/token.cpp.i
+.PHONY : src/token.i
+
+# target to preprocess a source file
+src/token.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/token.cpp.i
+.PHONY : src/token.cpp.i
+
+src/token.s: src/token.cpp.s
+.PHONY : src/token.s
+
+# target to generate assembly for a file
+src/token.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/token.cpp.s
+.PHONY : src/token.cpp.s
+
+src/token_stream.obj: src/token_stream.cpp.obj
+.PHONY : src/token_stream.obj
+
+# target to build an object file
+src/token_stream.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/token_stream.cpp.obj
+.PHONY : src/token_stream.cpp.obj
+
+src/token_stream.i: src/token_stream.cpp.i
+.PHONY : src/token_stream.i
+
+# target to preprocess a source file
+src/token_stream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/token_stream.cpp.i
+.PHONY : src/token_stream.cpp.i
+
+src/token_stream.s: src/token_stream.cpp.s
+.PHONY : src/token_stream.s
+
+# target to generate assembly for a file
+src/token_stream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make CMakeFiles/calculator.dir/src/token_stream.cpp.s
+.PHONY : src/token_stream.cpp.s
+
 src/utility.obj: src/utility.cpp.obj
 .PHONY : src/utility.obj
 
@@ -305,12 +305,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... calculator
-	@echo ... src/Token.obj
-	@echo ... src/Token.i
-	@echo ... src/Token.s
-	@echo ... src/Token_stream.obj
-	@echo ... src/Token_stream.i
-	@echo ... src/Token_stream.s
 	@echo ... src/calculator.obj
 	@echo ... src/calculator.i
 	@echo ... src/calculator.s
@@ -320,6 +314,12 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/token.obj
+	@echo ... src/token.i
+	@echo ... src/token.s
+	@echo ... src/token_stream.obj
+	@echo ... src/token_stream.i
+	@echo ... src/token_stream.s
 	@echo ... src/utility.obj
 	@echo ... src/utility.i
 	@echo ... src/utility.s

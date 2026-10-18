@@ -1,6 +1,6 @@
-CMakeFiles/calculator.dir/sourse/calculator.cpp.obj: \
- C:\pyproject\calculator\sourse\calculator.cpp \
- C:\pyproject\calculator\sourse\calculator.h \
+CMakeFiles/calculator.dir/src/variable.cpp.obj: \
+ C:\pyproject\calculator\src\variable.cpp \
+ C:/pyproject/calculator/src/internal/variable.h \
  C:/msys64/ucrt64/include/c++/16.1.0/string \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -109,11 +109,16 @@ CMakeFiles/calculator.dir/sourse/calculator.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/tuple \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/invoke.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ranges_util.h \
- C:\pyproject\calculator\sourse\Token_stream.h \
- C:\pyproject\calculator\sourse\Token.h \
- C:/msys64/ucrt64/include/c++/16.1.0/iostream \
- C:/msys64/ucrt64/include/c++/16.1.0/ostream \
- C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/vector \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_uninitialized.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_vector.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_bvector.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/vector.tcc \
+ C:/pyproject/calculator/src/internal/token.h \
+ C:/pyproject/calculator/src/internal/token_stream.h \
+ C:/pyproject/calculator/src/internal/utility.h \
+ C:/msys64/ucrt64/include/c++/16.1.0/sstream \
+ C:/msys64/ucrt64/include/c++/16.1.0/istream \
  C:/msys64/ucrt64/include/c++/16.1.0/ios \
  C:/msys64/ucrt64/include/c++/16.1.0/exception \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/exception_ptr.h \
@@ -155,11 +160,9 @@ CMakeFiles/calculator.dir/sourse/calculator.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32/bits/ctype_inline.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/locale_facets.tcc \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/basic_ios.tcc \
+ C:/msys64/ucrt64/include/c++/16.1.0/ostream \
+ C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream_print.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/ostream.tcc \
- C:/msys64/ucrt64/include/c++/16.1.0/istream \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/istream.tcc \
- C:\pyproject\calculator\sourse\grammar.h \
- C:\pyproject\calculator\sourse\utility.h \
- C:/msys64/ucrt64/include/c++/16.1.0/sstream \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/sstream.tcc
