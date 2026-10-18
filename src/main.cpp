@@ -13,7 +13,7 @@ void run_calculator()
 	try {
 	std::string input;
 	std::getline(std::cin, input);
-	std::string result {calculate(input)};
+	std::string result {calculator(input)};
 	std::cout << result << std::endl;
 	}
 
@@ -30,7 +30,7 @@ void run_calculator()
 
 int main()
 try {
-	calculate();
+	run_calculator();
 	return 0;
 }
 catch (std::exception& e) {

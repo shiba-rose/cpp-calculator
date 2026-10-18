@@ -1,6 +1,7 @@
 #include "token_stream.h"
 #include <iostream>
 #include "utility.h"
+#include "calculator.h"
 
 Token_stream ts;
 
@@ -10,7 +11,7 @@ Token Token_stream::get()
 {
 	if (full) { full = false; return buffer; }
 	char ch;
-	std::cin >> ch;
+	stream >> ch;
 	switch (ch) {
 	case '(':
 	case ')':

@@ -7,12 +7,13 @@
 
 
 
-std::string calculate(std::string str)
+std::string calculator(std::string str)
 {
-	std::string result;
-	for(;;) 
+	std::string str_result;
+	std::istringstream stream(str);
+	for(;;)
 	try {
-		std::cout << prompt;
+		str_result += result;
 		Token t = ts.get();
 		while (t.kind == print) t = ts.get();
 		if (t.kind == quit) throw "quit";
@@ -23,6 +24,6 @@ std::string calculate(std::string str)
 		std::cerr << e.what() << std::endl;
 		clean_up_mess();
 	}
-	
+
 	return result;
 }
