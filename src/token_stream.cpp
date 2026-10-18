@@ -1,6 +1,7 @@
 #include "token_stream.h"
 #include <iostream>
 #include "utility.h"
+#include <cctype>
 
 Token_stream ts;
 
@@ -37,11 +38,11 @@ Token Token_stream::get()
 	case '7':
 	case '8':
 	case '9':
-	{	stream->unget();; // return the last character read to the input stream
+	{	stream->unget(); // return the last character read to the input stream
 	double val;
 
 	if (!(*stream >> val)){
-		std::cin.clear(); 
+		stream->clear(); 
 		clean_up_mess();
     	error("Invalid number");
 	}
