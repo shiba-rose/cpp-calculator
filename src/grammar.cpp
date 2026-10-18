@@ -2,6 +2,8 @@
 #include "variable.h"
 #include "grammar.h"
 #include "utility.h"
+#include <iomanip>
+#include <sstream>
 // calculator grammar  
  
 std::string primer;
@@ -13,9 +15,11 @@ void write_primer(std::string str)
 
 void write_primer(double value)
 {
-	std::string str = std::to_string(value);
-	primer = primer + str + " ";
+ 	std::ostringstream stream;
+    stream << std::setprecision(15) << std::defaultfloat << value;
+    primer += stream.str() + " ";
 }
+
 void write_primer(char ch)
 {
 	std::string str {ch};
