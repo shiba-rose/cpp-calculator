@@ -1,0 +1,44 @@
+[
+{
+  "directory": "C:/pyproject/calculator/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\calculator.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\calculator.dir\\src\\calculator.cpp.obj -c C:\\pyproject\\calculator\\src\\calculator.cpp",
+  "file": "C:/pyproject/calculator/src/calculator.cpp",
+  "output": "CMakeFiles/calculator.dir/src/calculator.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\calculator.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\calculator.dir\\src\\token.cpp.obj -c C:\\pyproject\\calculator\\src\\token.cpp",
+  "file": "C:/pyproject/calculator/src/token.cpp",
+  "output": "CMakeFiles/calculator.dir/src/token.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\calculator.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\calculator.dir\\src\\token_stream.cpp.obj -c C:\\pyproject\\calculator\\src\\token_stream.cpp",
+  "file": "C:/pyproject/calculator/src/token_stream.cpp",
+  "output": "CMakeFiles/calculator.dir/src/token_stream.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\calculator.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\calculator.dir\\src\\utility.cpp.obj -c C:\\pyproject\\calculator\\src\\utility.cpp",
+  "file": "C:/pyproject/calculator/src/utility.cpp",
+  "output": "CMakeFiles/calculator.dir/src/utility.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\calculator.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\calculator.dir\\src\\variable.cpp.obj -c C:\\pyproject\\calculator\\src\\variable.cpp",
+  "file": "C:/pyproject/calculator/src/variable.cpp",
+  "output": "CMakeFiles/calculator.dir/src/variable.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\calculator.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\calculator.dir\\src\\grammar.cpp.obj -c C:\\pyproject\\calculator\\src\\grammar.cpp",
+  "file": "C:/pyproject/calculator/src/grammar.cpp",
+  "output": "CMakeFiles/calculator.dir/src/grammar.cpp.obj"
+},
+{
+  "directory": "C:/pyproject/calculator/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\calculator.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\calculator.dir\\src\\main.cpp.obj -c C:\\pyproject\\calculator\\src\\main.cpp",
+  "file": "C:/pyproject/calculator/src/main.cpp",
+  "output": "CMakeFiles/calculator.dir/src/main.cpp.obj"
+}
+]
