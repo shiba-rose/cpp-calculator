@@ -40,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "calculator::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-calculator-Debug-93502e74aa45185f54ec.json",
+					"jsonFile" : "target-calculator-Debug-0a3b3702f460ff825c1a.json",
 					"name" : "calculator",
 					"projectIndex" : 0
 				}
@@ -50,8 +50,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/pyproject/calculator/build",
-		"source" : "C:/pyproject/calculator"
+		"build" : "C:/project/calculator/build",
+		"source" : "C:/project/calculator"
 	},
 	"version" : 
 	{

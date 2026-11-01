@@ -16,4 +16,6 @@ void clean_up_mess();
 [[noreturn]] void error (const std::string& s);
 [[noreturn]] void error (const std::string& s, const std::string& s2);
 [[noreturn]] void error (const std::string& s, int i);
+
+std::string help();
 #endif

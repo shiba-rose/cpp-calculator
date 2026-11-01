@@ -57,11 +57,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/pyproject/calculator/include/calculator"
+					"path" : "C:/project/calculator/include/calculator"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/pyproject/calculator/src/internal"
+					"path" : "C:/project/calculator/src/internal"
 				}
 			],
 			"language" : "CXX",

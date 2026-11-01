@@ -28,6 +28,11 @@ std::string calculator(std::string str)
             if (t.kind == quit)
                 throw std::string("quit");
 
+            if (t.kind == help1) {
+                str_result += help();
+                continue;
+            }
+
             ts.unget(t);
             std::ostringstream output;
 
@@ -36,9 +41,7 @@ std::string calculator(std::string str)
             s << std::setprecision(15) << std::defaultfloat << value;
             std::string suffix = s.str() + " ";
 
-            if (primer.size() < suffix.size() ||
-                primer.compare(primer.size() - suffix.size(), suffix.size(), suffix) != 0)
-                output << result << value;
+            output << result << value;
 
             output << '\n';
             str_result = str_result + primer + output.str();

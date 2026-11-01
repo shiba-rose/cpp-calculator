@@ -16,7 +16,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/4.4.3/CMakeSystem.cmake"
+			"path" : "build/CMakeFiles/4.4.3/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -300,7 +300,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/4.4.3/CMakeCXXCompiler.cmake"
+			"path" : "build/CMakeFiles/4.4.3/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -374,7 +374,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/4.4.3/CMakeRCCompiler.cmake"
+			"path" : "build/CMakeFiles/4.4.3/CMakeRCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -458,7 +458,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/4.4.3/CMakeCXXCompiler.cmake"
+			"path" : "build/CMakeFiles/4.4.3/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -478,12 +478,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/GNU-CXX.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/GNU.cmake"
+			"path" : "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-CXX.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -514,8 +509,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/pyproject/calculator/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
-		"source" : "C:/pyproject/calculator"
+		"build" : "C:/project/calculator/build",
+		"source" : "C:/project/calculator"
 	},
 	"version" : 
 	{

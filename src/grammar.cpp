@@ -30,6 +30,8 @@ void write_primer(char ch)
 double primary()
 {
 	Token t = ts.get();
+	Token ind;
+	double prov;
 	switch (t.kind) {
 	case '(':
 	{	
@@ -40,15 +42,66 @@ double primary()
 		write_primer(t.kind);
 		return d;
 	}
+	case '+':
 	case '-':
-		primer += "-";
-		return -primary();
+	{
+    int sign = 1;
+
+    for(;;) {
+        if (t.kind == '-') {
+            sign = -sign;
+        }
+
+        else if (t.kind != '+') {
+            break;
+        }
+
+        t = ts.get();
+    }
+
+    ts.unget(t);
+    return sign * primary();
+}
 	case number:
+		ind = ts.get();
+		if (ind.kind == deg0) {
+			write_primer(t.value);
+			write_primer(ind.kind);
+			return t.value * M_PI / 180.0;
+		}
+		else if (ind.kind == rad0) {
+			write_primer(t.value);
+			write_primer(ind.kind);
+			return t.value;
+		}
+		else {
+			ts.unget(ind);
+		}
 		write_primer(t.value);
 		return t.value;
 	case name:
 		write_primer(t.name);
 		return symbol_table.get_value(t.name);
+	case sin0:
+		ind = ts.get();
+		if (ind.kind != '(') error("'(' expected after sin");
+		ts.unget(ind);
+		write_primer(t.kind);
+		return sin(primary());
+	case cos0:
+		ind = ts.get();
+		if (ind.kind != '(') error("'(' expected after sin");
+		ts.unget(ind);
+		write_primer(t.kind);
+		return cos(primary());
+	case tan0:
+		ind = ts.get();
+		if (ind.kind != '(') error("'(' expected after tan");
+		ts.unget(ind);
+		write_primer(t.kind);
+		prov = primary();
+		if (cos(prov) == 0) error("tan is undefined for this value");
+		return tan(prov);
 	default:
 		error("primary expected");
 	}

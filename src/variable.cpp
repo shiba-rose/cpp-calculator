@@ -69,7 +69,7 @@ double Symbol_table::define_name(){
 	if (t.kind == 'C' || t.kind == 'U')
 	{
 		if (t.kind == 'C') flag_const = 1;
-		else flag_const = 2;
+		if (t.kind == 'U') flag_const = 2;
 		t = ts.get();	
 	}
 	if (t.kind != 'a') error("name expected in declaration");
@@ -94,9 +94,9 @@ double Symbol_table::define_name(){
 	double d = expression();
 	if (symbol_table.is_declared(name))
 	{
+		if (flag_const == 2) symbol_table.set_unconst(name);
 		symbol_table.set_value(name, d);
 		if (flag_const == 1) symbol_table.set_const(name);
-		if (flag_const == 2) symbol_table.set_unconst(name);
 		return d;
 	}
 	

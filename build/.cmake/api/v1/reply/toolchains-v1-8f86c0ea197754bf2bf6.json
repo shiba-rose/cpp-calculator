@@ -10,19 +10,19 @@
 				{
 					"includeDirectories" : 
 					[
-						"C:/msys64/ucrt64/include/c++/16.1.0",
-						"C:/msys64/ucrt64/include/c++/16.1.0/x86_64-w64-mingw32",
-						"C:/msys64/ucrt64/include/c++/16.1.0/backward",
-						"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include",
-						"C:/msys64/ucrt64/include",
-						"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed"
+						"C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++",
+						"C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32",
+						"C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/backward",
+						"C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include",
+						"C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed",
+						"C:/msys64/mingw64/x86_64-w64-mingw32/include"
 					],
 					"linkDirectories" : 
 					[
-						"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0",
-						"C:/msys64/ucrt64/lib/gcc",
-						"C:/msys64/ucrt64/x86_64-w64-mingw32/lib",
-						"C:/msys64/ucrt64/lib"
+						"C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0",
+						"C:/msys64/mingw64/lib/gcc",
+						"C:/msys64/mingw64/x86_64-w64-mingw32/lib",
+						"C:/msys64/mingw64/lib"
 					],
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : 
@@ -38,6 +38,7 @@
 						"shell32",
 						"user32",
 						"kernel32",
+						"iconv",
 						"mingw32",
 						"gcc_s",
 						"gcc",
@@ -45,8 +46,8 @@
 						"kernel32"
 					]
 				},
-				"path" : "C:/msys64/ucrt64/bin/g++.exe",
-				"version" : "16.1.0"
+				"path" : "C:/msys64/mingw64/bin/g++.exe",
+				"version" : "16.2.0"
 			},
 			"language" : "CXX",
 			"sourceFileExtensions" : 
@@ -72,7 +73,7 @@
 			"compiler" : 
 			{
 				"implicit" : {},
-				"path" : "C:/msys64/ucrt64/bin/windres.exe"
+				"path" : "C:/msys64/mingw64/bin/windres.exe"
 			},
 			"language" : "RC",
 			"sourceFileExtensions" : 

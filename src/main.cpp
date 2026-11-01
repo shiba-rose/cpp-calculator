@@ -10,12 +10,12 @@ void run_calculator()
 {
 	for(;;) 
 	try {
-	std::cout << ">";
-	std::string input;
+		std::cout << ">";
+		std::string input;
 
-	if (!std::getline(std::cin, input)) return;
-	std::string result {calculator(input)};
-	std::cout << result;
+		if (!std::getline(std::cin, input)) return;
+		std::string result {calculator(input)};
+		std::cout << result;
 	}
 
 	catch (std::string s){

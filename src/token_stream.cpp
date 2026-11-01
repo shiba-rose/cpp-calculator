@@ -43,7 +43,6 @@ Token Token_stream::get()
 
 	if (!(*stream >> val)){
 		stream->clear(); 
-		clean_up_mess();
     	error("Invalid number");
 	}
 	return Token(number, val);
@@ -58,6 +57,12 @@ Token Token_stream::get()
 			if (s == "quit") return Token(quit);
 			if (s == "const") return Token(const0);
 			if (s == "unconst") return Token(unconst0);
+			if (s == "help") return Token(help1);
+			if (s == "sin") return Token(sin0);
+			if (s == "cos") return Token(cos0);
+			if (s == "tan") return Token(tan0);
+			if (s == "deg") return Token(deg0);
+			if (s == "rad") return Token(rad0);
 			return Token(name, s);
 		}
 		error("Bad token");	
