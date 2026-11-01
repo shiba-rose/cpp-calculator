@@ -15,7 +15,7 @@ static constexpr char name = 'a';
 static constexpr char end_of_input = 'E';
 static constexpr char sin0 = 's';
 static constexpr char cos0 = 'c';
-static constexpr char tan0 = 't';
+static constexpr char tg0 = 't';
 static constexpr char deg0 = 'd';
 static constexpr char rad0 = 'r';
 

@@ -60,7 +60,7 @@ Token Token_stream::get()
 			if (s == "help") return Token(help1);
 			if (s == "sin") return Token(sin0);
 			if (s == "cos") return Token(cos0);
-			if (s == "tan") return Token(tan0);
+			if (s == "tg") return Token(tg0);
 			if (s == "deg") return Token(deg0);
 			if (s == "rad") return Token(rad0);
 			return Token(name, s);

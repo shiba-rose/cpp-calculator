@@ -91,6 +91,19 @@ std::string help()
         "    let const pi = 3.14\n"
         "    pi * 2\n"
         "\n"
-        "=================================================\n";
-
+        "=================================================\n"
+        "\nTRIGONOMETRIC FUNCTIONS:\n"
+        "  sin(x)  - sine of x\n"
+        "  cos(x)  - cosine of x\n"
+        "  tg(x)   - tangent of x\n"
+        "\n"
+        "ANGLE UNITS:\n"
+        "  rad     - radians (default unit)\n"
+        "  deg     - degrees (converted to radians)\n"
+        "\n"
+        "EXAMPLES:\n"
+        "  sin(1)       - sine of 1 radian\n"
+        "  sin(90deg)   - sine of 90 degrees\n"
+        "  cos(180deg)  - cosine of 180 degrees\n"
+        "  tg(45deg)    - tangent of 45 degrees\n";
 }

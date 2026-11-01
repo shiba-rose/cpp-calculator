@@ -66,12 +66,13 @@ double primary()
 		ind = ts.get();
 		if (ind.kind == deg0) {
 			write_primer(t.value);
-			write_primer(ind.kind);
-			return t.value * M_PI / 180.0;
+			write_primer(ind.name);
+			const double pi = std::acos(-1.0);
+			return t.value * pi / 180.0;
 		}
 		else if (ind.kind == rad0) {
 			write_primer(t.value);
-			write_primer(ind.kind);
+			write_primer(ind.name);
 			return t.value;
 		}
 		else {
@@ -86,22 +87,23 @@ double primary()
 		ind = ts.get();
 		if (ind.kind != '(') error("'(' expected after sin");
 		ts.unget(ind);
-		write_primer(t.kind);
-		return sin(primary());
+		write_primer("sin");
+		return std::sin(primary());
 	case cos0:
 		ind = ts.get();
-		if (ind.kind != '(') error("'(' expected after sin");
+		if (ind.kind != '(') error("'(' expected after cos");
 		ts.unget(ind);
-		write_primer(t.kind);
-		return cos(primary());
-	case tan0:
+		write_primer("cos");
+		return std::cos(primary());
+	case tg0:
 		ind = ts.get();
-		if (ind.kind != '(') error("'(' expected after tan");
+		if (ind.kind != '(') error("'(' expected after tg");
 		ts.unget(ind);
-		write_primer(t.kind);
+		write_primer("tg");
 		prov = primary();
-		if (cos(prov) == 0) error("tan is undefined for this value");
-		return tan(prov);
+		if (std::abs(std::cos(prov)) < 1e-12)
+    		error("tg is undefined for this value");
+		return std::tan(prov);
 	default:
 		error("primary expected");
 	}
