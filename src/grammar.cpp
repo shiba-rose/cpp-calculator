@@ -66,13 +66,13 @@ double primary()
 		ind = ts.get();
 		if (ind.kind == deg0) {
 			write_primer(t.value);
-			write_primer(ind.name);
+			write_primer("deg");
 			const double pi = std::acos(-1.0);
 			return t.value * pi / 180.0;
 		}
 		else if (ind.kind == rad0) {
 			write_primer(t.value);
-			write_primer(ind.name);
+			write_primer("rad");
 			return t.value;
 		}
 		else {
