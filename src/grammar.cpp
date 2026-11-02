@@ -55,7 +55,7 @@ double primary()
         else if (t.kind != '+') {
             break;
         }
-
+		write_primer(t.kind);
         t = ts.get();
     }
 
