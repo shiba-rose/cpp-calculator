@@ -66,17 +66,17 @@ double Symbol_table::define_name(){
 
 	Token t = ts.get();
 	int flag_const = 0;
-	if (t.kind == 'C' || t.kind == 'U')
+	if (t.kind == TokenKind::constant || t.kind == TokenKind::unconst)
 	{
-		if (t.kind == 'C') flag_const = 1;
-		if (t.kind == 'U') flag_const = 2;
+		if (t.kind == TokenKind::constant) flag_const = 1;
+		if (t.kind == TokenKind::unconst) flag_const = 2;
 		t = ts.get();	
 	}
-	if (t.kind != 'a') error("name expected in declaration");
+	if (t.kind != TokenKind::identifier) error("name expected in declaration");
 	std::string name = t.name;
 	write_primer(name);
 	Token t2 = ts.get();
-	if (t2.kind != '=') 
+	if (t2.kind != TokenKind::assign)
 	{
 		if (flag_const == 1)
 		{

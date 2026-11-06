@@ -20,9 +20,9 @@ void write_primer(double value)
     primer += stream.str() + " ";
 }
 
-void write_primer(char ch)
+void write_primer(TokenKind kind)
 {
-	std::string str {ch};
+	std::string str {static_cast<char>(kind)};
 	primer = primer + str + " ";
 }
 
@@ -33,26 +33,26 @@ double primary()
 	Token ind;
 	double prov;
 	switch (t.kind) {
-	case '(':
+	case TokenKind::left_parenthesis:
 	{	
 		write_primer(t.kind);
 		double d = expression();
 	    t = ts.get();
-		if (t.kind != ')') error("')' expected");
+		if (t.kind != TokenKind::right_parenthesis) error("')' expected");
 		write_primer(t.kind);
 		return d;
 	}
-	case '+':
-	case '-':
+	case TokenKind::plus:
+	case TokenKind::minus:
 	{
     int sign = 1;
 
     for(;;) {
-        if (t.kind == '-') {
+        if (t.kind == TokenKind::minus) {
             sign = -sign;
         }
 
-        else if (t.kind != '+') {
+        else if (t.kind != TokenKind::plus) {
             break;
         }
 		write_primer(t.kind);
@@ -62,15 +62,15 @@ double primary()
     ts.unget(t);
     return sign * primary();
 }
-	case number:
+	case TokenKind::number:
 		ind = ts.get();
-		if (ind.kind == deg0) {
+		if (ind.kind == TokenKind::degrees) {
 			write_primer(t.value);
 			write_primer("deg");
 			const double pi = std::acos(-1.0);
 			return t.value * pi / 180.0;
 		}
-		else if (ind.kind == rad0) {
+		else if (ind.kind == TokenKind::radians) {
 			write_primer(t.value);
 			write_primer("rad");
 			return t.value;
@@ -80,24 +80,24 @@ double primary()
 		}
 		write_primer(t.value);
 		return t.value;
-	case name:
+	case TokenKind::identifier:
 		write_primer(t.name);
 		return symbol_table.get_value(t.name);
-	case sin0:
+	case TokenKind::sine:
 		ind = ts.get();
-		if (ind.kind != '(') error("'(' expected after sin");
+		if (ind.kind != TokenKind::left_parenthesis) error("'(' expected after sin");
 		ts.unget(ind);
 		write_primer("sin");
 		return std::sin(primary());
-	case cos0:
+	case TokenKind::cosine:
 		ind = ts.get();
-		if (ind.kind != '(') error("'(' expected after cos");
+		if (ind.kind != TokenKind::left_parenthesis) error("'(' expected after cos");
 		ts.unget(ind);
 		write_primer("cos");
 		return std::cos(primary());
-	case tg0:
+	case TokenKind::tangent:
 		ind = ts.get();
-		if (ind.kind != '(') error("'(' expected after tg");
+		if (ind.kind != TokenKind::left_parenthesis) error("'(' expected after tg");
 		ts.unget(ind);
 		write_primer("tg");
 		prov = primary();
@@ -115,11 +115,11 @@ double term()
 	for(;;) {
 		Token t = ts.get();
 		switch (t.kind) {
-		case '*':
+		case TokenKind::multiply:
 			write_primer(t.kind);
 			left *= primary();
 			break;
-		case '/':
+		case TokenKind::divide:
 		{
 			write_primer(t.kind);	
 			double d = primary();
@@ -140,11 +140,11 @@ double expression()
 	for(;;) {
 		Token t = ts.get();
 		switch (t.kind) {
-		case '+':
+		case TokenKind::plus:
 			write_primer(t.kind);
 			left += term();
 			break;
-		case '-':
+		case TokenKind::minus:
 			write_primer(t.kind);
 			left -= term();
 			break;
@@ -166,7 +166,7 @@ double statement()
 {
 	Token t = ts.get();
 	switch (t.kind) {
-	case let:
+	case TokenKind::let:
 		return declaration();
 	default:
 		ts.unget(t);

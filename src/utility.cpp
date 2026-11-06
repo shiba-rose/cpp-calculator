@@ -4,7 +4,7 @@
 
 void clean_up_mess()
 {
-	ts.ignore(print);
+	ts.ignore(TokenKind::semicolon);
 }
 
 

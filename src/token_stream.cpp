@@ -12,7 +12,7 @@ Token Token_stream::get()
 	if (full) { full = false; return buffer; }
 	char ch;
 	if (!(*stream >> ch)) {
-    	return Token(end_of_input);
+    	return Token(TokenKind::end_of_input);
 	}
 	switch (ch) {
 	case '(':
@@ -38,14 +38,17 @@ Token Token_stream::get()
 	case '7':
 	case '8':
 	case '9':
-	{	stream->unget(); // return the last character read to the input stream
-	double val;
+	{	
+		stream->unget(); // return the last character read to the input stream
+		double val;
 
-	if (!(*stream >> val)){
-		stream->clear(); 
-    	error("Invalid number");
-	}
-	return Token(number, val);
+		if (!(*stream >> val))
+		{
+			stream->clear(); 
+    		error("Invalid number");
+		}
+
+	return Token(val);
 	}
 	default:
 		if (isalpha(ch)) {
@@ -53,24 +56,24 @@ Token Token_stream::get()
 			s += ch;
 			while (stream->get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_')) s += ch;
 			stream->unget(); // return the last character read to the input stream
-			if (s == "let") return Token(let);
-			if (s == "quit") return Token(quit);
-			if (s == "const") return Token(const0);
-			if (s == "unconst") return Token(unconst0);
-			if (s == "help") return Token(help1);
-			if (s == "sin") return Token(sin0);
-			if (s == "cos") return Token(cos0);
-			if (s == "tg") return Token(tg0);
-			if (s == "deg") return Token(deg0);
-			if (s == "rad") return Token(rad0);
-			return Token(name, s);
+			if (s == "let") return Token(TokenKind::let);
+			if (s == "quit") return Token(TokenKind::quit);
+			if (s == "const") return Token(TokenKind::constant);
+			if (s == "unconst") return Token(TokenKind::unconst);
+			if (s == "help") return Token(TokenKind::help);
+			if (s == "sin") return Token(TokenKind::sine);
+			if (s == "cos") return Token(TokenKind::cosine);
+			if (s == "tg") return Token(TokenKind::tangent);
+			if (s == "deg") return Token(TokenKind::degrees);
+			if (s == "rad") return Token(TokenKind::radians);
+			return Token(s);
 		}
 		error("Bad token");	
 	}
 }
 
 
-void Token_stream::ignore(char c)
+void Token_stream::ignore(TokenKind c)
 {
 	if (full && c == buffer.kind) {
 		full = false;
@@ -80,5 +83,5 @@ void Token_stream::ignore(char c)
 
 	char ch;
 	while (*stream >> ch)
-		if (ch == c) return;
+		if (ch == static_cast<char>(c)) return;
 }

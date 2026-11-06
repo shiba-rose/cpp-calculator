@@ -4,30 +4,50 @@
 #include <string>
 
 // Character codes identifying token kinds.
-static constexpr char unconst0 = 'U';
-static constexpr char help1 = 'H';
-static constexpr char const0 = 'C';
-static constexpr char let = 'L';
-static constexpr char quit = 'Q';
-static constexpr char print = ';';
-static constexpr char number = '8';
-static constexpr char name = 'a';
-static constexpr char end_of_input = 'E';
-static constexpr char sin0 = 's';
-static constexpr char cos0 = 'c';
-static constexpr char tg0 = 't';
-static constexpr char deg0 = 'd';
-static constexpr char rad0 = 'r';
+enum class TokenKind : char {
+    none = 0,
+
+    left_parenthesis = '(',
+    right_parenthesis = ')',
+
+    plus = '+',
+    minus = '-',
+    multiply = '*',
+    divide = '/',
+    modulo = '%',
+
+    semicolon = ';',
+    assign = '=',
+
+    unconst = 'U',
+    help = 'H',
+    constant = 'C',
+    let = 'L',
+    quit = 'Q',
+
+    number = '8',
+    identifier = 'a',
+    end_of_input = 'E',
+
+    sine = 's',
+    cosine = 'c',
+    tangent = 't',
+    degrees = 'd',
+    radians = 'r'
+};
 
 // Represents a token read from the input.
 struct Token {
-	char kind;
+	TokenKind kind;
 	double value;
 	std::string name;
-	Token() : kind(0), value(0.0), name("") {};
+	Token() : kind(TokenKind::none), value(0.0), name("") {};
 	Token(char ch);
-    Token(char ch, double val);
-    Token(char ch, std::string n);
+	Token(TokenKind ch);
+    Token(double val);
+    Token(std::string n);
+	bool operator==(const Token& other) const;
+	bool operator!=(const Token& other) const;
 };
 
 #endif

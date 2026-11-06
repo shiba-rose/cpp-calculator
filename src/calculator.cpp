@@ -19,16 +19,16 @@ std::string calculator(std::string str)
         try {
             Token t = ts.get();
 
-            while (t.kind == print)
+            while (t.kind == TokenKind::semicolon) 
                 t = ts.get();
 
-            if (t.kind == end_of_input)
+            if (t.kind == TokenKind::end_of_input)
                 break;
 
-            if (t.kind == quit)
+            if (t.kind == TokenKind::quit)
                 throw std::string("quit");
 
-            if (t.kind == help1) {
+            if (t.kind == TokenKind::help) {
                 str_result += help();
                 continue;
             }

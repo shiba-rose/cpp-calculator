@@ -11,7 +11,7 @@ class Token_stream {
     Token buffer;
 
 public:
-    Token_stream() : stream(nullptr), full(false), buffer(0) { }
+    Token_stream() : stream(nullptr), full(false), buffer() { }
 
     void set_input(std::istream& s) {
         stream = &s;
@@ -21,7 +21,7 @@ public:
     Token get();
     void unget(Token t) { buffer = t; full = true; }
 
-    void ignore(char);
+    void ignore(TokenKind c);
 };
 
 extern Token_stream ts;
