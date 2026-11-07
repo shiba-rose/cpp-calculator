@@ -168,6 +168,7 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/aligned_buffer.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/enable_special_members.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/node_handle.h \
+ C:/project/calculator/src/internal/grammar.h \
  C:/project/calculator/src/internal/utility.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/sstream \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/sstream.tcc \
@@ -181,9 +182,8 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.tcc \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_conv.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/quoted_string.h \
+ C:/project/calculator/src/internal/calculator_context.h \
  C:/project/calculator/src/internal/variable.h \
- C:/project/calculator/src/internal/calculator.h \
- C:/project/calculator/src/internal/grammar.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cmath \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/math.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/specfun.h \

@@ -9,13 +9,7 @@
 
 #include "token.h"
 #include "token_stream.h"
-#include "variable.h"
-
-struct Calculator_context {
-    Token_stream token_stream;
-    Symbol_table symbol_table;
-    std::string text_input;
-};
+#include "calculator_context.h"
 
 
 void clean_up_mess(Calculator_context& context); 

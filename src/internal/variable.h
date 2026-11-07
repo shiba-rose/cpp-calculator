@@ -6,8 +6,7 @@
 
 #include "token.h"
 #include "token_stream.h"	
-#include "utility.h"
-#include "calculator.h"		
+struct Calculator_context;	
 
 //function for finding the value of a variable
 struct Variable {

@@ -63,12 +63,15 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/project/calculator/src/calc
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stdexcept_throw.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stdexcept_throwfwd.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_algobase.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_bvector.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_construct.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_function.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator_base_types.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_pair.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_vector.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf_iterator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/string_view.tcc \
@@ -77,6 +80,7 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/project/calculator/src/calc
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_allocator_args.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/utility.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/vector.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/version.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cctype \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cerrno \
@@ -132,6 +136,7 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/project/calculator/src/calc
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/type_traits \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/typeinfo \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/unordered_map \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/vector \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -192,10 +197,12 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: C:/project/calculator/src/calc
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h \
   C:/project/calculator/src/internal/calculator.h \
+  C:/project/calculator/src/internal/calculator_context.h \
   C:/project/calculator/src/internal/grammar.h \
   C:/project/calculator/src/internal/token.h \
   C:/project/calculator/src/internal/token_stream.h \
-  C:/project/calculator/src/internal/utility.h
+  C:/project/calculator/src/internal/utility.h \
+  C:/project/calculator/src/internal/variable.h
 
 CMakeFiles/calculator.dir/src/grammar.cpp.obj: C:/project/calculator/src/grammar.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/backward/binders.h \
@@ -391,7 +398,7 @@ CMakeFiles/calculator.dir/src/grammar.cpp.obj: C:/project/calculator/src/grammar
   C:/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  C:/project/calculator/src/internal/calculator.h \
+  C:/project/calculator/src/internal/calculator_context.h \
   C:/project/calculator/src/internal/grammar.h \
   C:/project/calculator/src/internal/token.h \
   C:/project/calculator/src/internal/token_stream.h \
@@ -459,12 +466,15 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stdexcept_throw.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stdexcept_throwfwd.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_algobase.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_bvector.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_construct.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_function.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator_base_types.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_pair.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_vector.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf_iterator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/string_view.tcc \
@@ -473,6 +483,7 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_allocator_args.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/utility.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/vector.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/version.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cctype \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cerrno \
@@ -514,6 +525,7 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/type_traits \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/typeinfo \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/unordered_map \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/vector \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -573,9 +585,11 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h \
   C:/project/calculator/src/internal/calculator.h \
+  C:/project/calculator/src/internal/calculator_context.h \
   C:/project/calculator/src/internal/token.h \
   C:/project/calculator/src/internal/token_stream.h \
-  C:/project/calculator/src/internal/utility.h
+  C:/project/calculator/src/internal/utility.h \
+  C:/project/calculator/src/internal/variable.h
 
 CMakeFiles/calculator.dir/src/token.cpp.obj: C:/project/calculator/src/token.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/backward/binders.h \
@@ -745,12 +759,15 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/project/calculator/src/to
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stdexcept_throw.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stdexcept_throwfwd.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_algobase.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_bvector.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_construct.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_function.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator_base_types.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_pair.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_vector.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf_iterator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/string_view.tcc \
@@ -759,6 +776,7 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/project/calculator/src/to
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_allocator_args.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/utility.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/vector.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/version.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cctype \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cerrno \
@@ -800,6 +818,7 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/project/calculator/src/to
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/type_traits \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/typeinfo \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/unordered_map \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/vector \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -858,9 +877,11 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/project/calculator/src/to
   C:/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  C:/project/calculator/src/internal/calculator_context.h \
   C:/project/calculator/src/internal/token.h \
   C:/project/calculator/src/internal/token_stream.h \
-  C:/project/calculator/src/internal/utility.h
+  C:/project/calculator/src/internal/utility.h \
+  C:/project/calculator/src/internal/variable.h
 
 CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/backward/binders.h \
@@ -923,12 +944,15 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stdexcept_throw.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stdexcept_throwfwd.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_algobase.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_bvector.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_construct.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_function.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_iterator_base_types.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_pair.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_uninitialized.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_vector.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf_iterator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/string_view.tcc \
@@ -937,6 +961,7 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_allocator_args.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/utility.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/vector.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/version.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cctype \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cerrno \
@@ -977,6 +1002,7 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/type_traits \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/typeinfo \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/unordered_map \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/vector \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -1035,9 +1061,11 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility
   C:/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  C:/project/calculator/src/internal/calculator_context.h \
   C:/project/calculator/src/internal/token.h \
   C:/project/calculator/src/internal/token_stream.h \
-  C:/project/calculator/src/internal/utility.h
+  C:/project/calculator/src/internal/utility.h \
+  C:/project/calculator/src/internal/variable.h
 
 CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/project/calculator/src/variable.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/backward/binders.h \
@@ -1233,7 +1261,7 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/project/calculator/src/variab
   C:/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  C:/project/calculator/src/internal/calculator.h \
+  C:/project/calculator/src/internal/calculator_context.h \
   C:/project/calculator/src/internal/grammar.h \
   C:/project/calculator/src/internal/token.h \
   C:/project/calculator/src/internal/token_stream.h \
@@ -1355,6 +1383,10 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/localefwd.h
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/memory_resource.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/tr1/exp_integral.tcc:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_bvector.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/move.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_construct.h:
@@ -1409,6 +1441,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/alloc_traits
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_pair.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_vector.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf.tcc:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf_iterator.h:
@@ -1423,6 +1457,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_alloca
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/utility.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/vector.tcc:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/version.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
@@ -1432,6 +1468,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cctype:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cerrno:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/concepts:
+
+C:/project/calculator/src/internal/calculator_context.h:
 
 C:/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
 
@@ -1507,10 +1545,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/tr1/beta_functio
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/tr1/ell_integral.tcc:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_bvector.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/tr1/exp_integral.tcc:
-
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/tr1/gamma.tcc:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/tr1/hypergeometric.tcc:
@@ -1534,6 +1568,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/type_traits:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/unordered_map:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/vector:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
 
@@ -1640,12 +1676,6 @@ C:/project/calculator/src/internal/grammar.h:
 C:/project/calculator/src/internal/token_stream.h:
 
 C:/project/calculator/src/internal/utility.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_vector.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/vector.tcc:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/vector:
 
 C:/project/calculator/src/internal/variable.h:
 
