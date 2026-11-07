@@ -17,7 +17,8 @@ const std::unordered_map<std::string, TokenKind> keywords = {
     {"cos", TokenKind::cosine},
     {"tg", TokenKind::tangent},
     {"deg", TokenKind::degrees},
-    {"rad", TokenKind::radians}
+    {"rad", TokenKind::radians},
+    {"calculate", TokenKind::calculate}
 };
 
 // Reads tokens from the input and supports one-token buffering.

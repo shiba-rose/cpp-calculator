@@ -24,6 +24,7 @@ enum class TokenKind : char {
     constant = 'C',
     let = 'L',
     quit = 'Q',
+    calculate = 'A',
 
     number = '8',
     identifier = 'a',
@@ -34,6 +35,7 @@ enum class TokenKind : char {
     tangent = 't',
     degrees = 'd',
     radians = 'r'
+
 };
 
 // Represents a token read from the input.
@@ -47,7 +49,7 @@ struct Token {
 	Token(TokenKind ch);
     Token(double val);
     Token(std::string n);
-    
+
 	bool operator==(const Token& other) const;
 	bool operator!=(const Token& other) const;
 };

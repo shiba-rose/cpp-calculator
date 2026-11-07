@@ -6,7 +6,7 @@
 #include "grammar.h"
 #include "utility.h"
 #include <stdexcept>
-
+#include <fstream>
 
 
 std::string calculator(std::string str, Calculator_context& context)
@@ -35,6 +35,11 @@ std::string calculator(std::string str, Calculator_context& context)
                 continue;
             }
 
+            if (t.kind == TokenKind::calculate) 
+            {
+                continue;
+            }
+
             context.token_stream.unget(t);
             std::ostringstream output;
 
@@ -56,4 +61,21 @@ std::string calculator(std::string str, Calculator_context& context)
     }
     
     return str_result;
+}
+
+std::string calculate_file(
+    const std::string& file_path,
+    Calculator_context& context)
+{
+std::ifstream file(file_path);
+
+    if (!file) throw std::runtime_error("Cannot open file: " + file_path);
+
+    std::string line;
+    std::string output;
+
+    while (std::getline(file, line))  output += calculator(line, context);
+  
+    return output;
+
 }
