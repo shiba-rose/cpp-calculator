@@ -41,11 +41,13 @@ struct Token {
 	TokenKind kind;
 	double value;
 	std::string name;
+
 	Token() : kind(TokenKind::none), value(0.0), name("") {};
 	Token(char ch);
 	Token(TokenKind ch);
     Token(double val);
     Token(std::string n);
+    
 	bool operator==(const Token& other) const;
 	bool operator!=(const Token& other) const;
 };

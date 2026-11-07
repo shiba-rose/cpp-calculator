@@ -9,35 +9,15 @@ Token_stream ts;
 
 Token Token_stream::get()
 {
-	if (full) { full = false; return buffer; }
 	char ch;
-	if (!(*stream >> ch)) {
-    	return Token(TokenKind::end_of_input);
-	}
-	switch (ch) {
-	case '(':
-	case ')':
-	case '+':
-	case '-':
-	case '*':
-	case '/':
-	case '%':
-	case ';':
-	case '=':
-	{
-		return Token(ch);
-	}
-	case '.':
-	case '0':
-	case '1':
-	case '2':
-	case '3':
-	case '4':
-	case '5':
-	case '6':
-	case '7':
-	case '8':
-	case '9':
+
+	if (full) { full = false; return buffer; }
+	
+	if (!(*stream >> ch)) return Token(TokenKind::end_of_input);
+	
+	if (symbols.find(ch) != std::string::npos) return Token(ch);
+
+	if (numbers.find(ch) != std::string::npos)
 	{	
 		stream->unget(); // return the last character read to the input stream
 		double val;
@@ -48,29 +28,26 @@ Token Token_stream::get()
     		error("Invalid number");
 		}
 
-	return Token(val);
+		return Token(val);
 	}
-	default:
-		if (isalpha(ch)) {
-			std::string s;
-			s += ch;
-			while (stream->get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_')) s += ch;
-			stream->unget(); // return the last character read to the input stream
-			if (s == "let") return Token(TokenKind::let);
-			if (s == "quit") return Token(TokenKind::quit);
-			if (s == "const") return Token(TokenKind::constant);
-			if (s == "unconst") return Token(TokenKind::unconst);
-			if (s == "help") return Token(TokenKind::help);
-			if (s == "sin") return Token(TokenKind::sine);
-			if (s == "cos") return Token(TokenKind::cosine);
-			if (s == "tg") return Token(TokenKind::tangent);
-			if (s == "deg") return Token(TokenKind::degrees);
-			if (s == "rad") return Token(TokenKind::radians);
-			return Token(s);
-		}
-		error("Bad token");	
+	
+	
+	if (isalpha(ch)) {
+		std::string s;
+		s += ch;
+
+		while (stream->get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_')) s += ch;
+		stream->unget(); // return the last character read to the input stream
+
+		auto it = keywords.find(s);
+		if (it != keywords.end()) return Token(it->second);
+		
+		return Token(s);
 	}
+ 
+	error("Bad token");	
 }
+
 
 
 void Token_stream::ignore(TokenKind c)
