@@ -176,4 +176,12 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.tcc \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_conv.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/quoted_string.h \
- C:/project/calculator/src/internal/token_stream.h
+ C:/project/calculator/src/internal/token_stream.h \
+ C:/project/calculator/src/internal/variable.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/vector \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_uninitialized.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_vector.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_bvector.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/vector.tcc \
+ C:/project/calculator/src/internal/utility.h \
+ C:/project/calculator/src/internal/calculator.h

@@ -9,7 +9,7 @@
 
 
 
-std::string calculator(std::string str, Calculator_context context)
+std::string calculator(std::string str, Calculator_context& context)
 {
     std::string str_result;
     std::istringstream stream(str);

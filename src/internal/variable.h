@@ -29,8 +29,8 @@ public:
 	void set_const(std::string name);
 	void set_unconst(std::string name);
 	void push_back(std::string s, double d);
-	double define_name(Calculator_context context);
+	double define_name(Calculator_context& context);
 };
 
-extern Symbol_table symbol_table;
+
 #endif

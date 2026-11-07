@@ -10,7 +10,7 @@
 
 
 
-double primary(Calculator_context context)
+double primary(Calculator_context& context)
 {
 	Token t = context.token_stream.get();
 	Token ind;
@@ -65,7 +65,7 @@ double primary(Calculator_context context)
 		return t.value;
 	case TokenKind::identifier:
 		write_input_text(context,t.name);
-		return symbol_table.get_value(t.name);
+		return context.symbol_table.get_value(t.name);
 	case TokenKind::sine:
 		ind = context.token_stream.get();
 		if (ind.kind != TokenKind::left_parenthesis) error("'(' expected after sin");
@@ -93,7 +93,7 @@ double primary(Calculator_context context)
 	}
 }
 
-double term(Calculator_context context)
+double term(Calculator_context& context)
 {
 	double left = primary(context);
 	for(;;) {
@@ -118,7 +118,7 @@ double term(Calculator_context context)
 	}
 }
 
-double expression(Calculator_context context)
+double expression(Calculator_context& context)
 {
 	double left = term(context);
 	for(;;) {
@@ -140,13 +140,13 @@ double expression(Calculator_context context)
 }
 
 // function parses the declaration of a variable of the form "let name = expression"
-double declaration(Calculator_context context)
+double declaration(Calculator_context& context)
 {
-	return symbol_table.define_name(context);
+	return context.symbol_table.define_name(context);
 
 }
 
-double statement(Calculator_context context)
+double statement(Calculator_context& context)
 {
 	Token t = context.token_stream.get();
 	switch (t.kind) {

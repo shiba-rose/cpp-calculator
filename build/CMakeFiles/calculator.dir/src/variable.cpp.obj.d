@@ -181,6 +181,7 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.tcc \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_conv.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/quoted_string.h \
+ C:/project/calculator/src/internal/variable.h \
  C:/project/calculator/src/internal/calculator.h \
  C:/project/calculator/src/internal/grammar.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cmath \

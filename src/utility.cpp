@@ -2,7 +2,7 @@
 
 // discards input until the next print token.
 
-void clean_up_mess(Calculator_context context)
+void clean_up_mess(Calculator_context& context)
 {
 	context.token_stream.ignore(TokenKind::semicolon);
 }
@@ -28,19 +28,19 @@ void clean_up_mess(Calculator_context context)
 }
 
 
-void write_input_text(Calculator_context context, std::string str)
+void write_input_text(Calculator_context& context, std::string str)
 {
 	context.text_input = context.text_input + str + " ";
 }
 
-void write_input_text(Calculator_context context, double value)
+void write_input_text(Calculator_context& context, double value)
 {
  	std::ostringstream stream;
     stream << std::setprecision(15) << std::defaultfloat << value;
     context.text_input += stream.str() + " ";
 }
 
-void write_input_text(Calculator_context context, TokenKind kind)
+void write_input_text(Calculator_context& context, TokenKind kind)
 {
 	std::string str {static_cast<char>(kind)};
 	context.text_input = context.text_input + str + " ";

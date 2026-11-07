@@ -2,7 +2,7 @@
 #include "grammar.h"
 
 
-Symbol_table symbol_table;
+
 
 size_t Symbol_table::find_name_index(std::string s)
 {
@@ -62,7 +62,7 @@ void Symbol_table::set_unconst(std::string name)
 void Symbol_table::push_back(std::string s, double d){
 	var_table.push_back(Variable(s, d));
 }
-double Symbol_table::define_name(Calculator_context context){
+double Symbol_table::define_name(Calculator_context& context){
 
 	Token t = context.token_stream.get();
 	int flag_const = 0;
@@ -86,27 +86,27 @@ double Symbol_table::define_name(Calculator_context context){
 
 		if (flag_const == 1)
 		{
-			symbol_table.set_const(name);
+			context.symbol_table.set_const(name);
 		}
 
 		else if (flag_const == 2)  
 		{
-			symbol_table.set_unconst(name);
+			context.symbol_table.set_unconst(name);
 		}
 
 		return var_table[find_name_index(name)].value;
 	}
 	write_input_text(context,t2.kind);
 	double d = expression(context);
-	if (symbol_table.is_declared(name))
+	if (context.symbol_table.is_declared(name))
 	{
-		if (flag_const == 2) symbol_table.set_unconst(name);
-		symbol_table.set_value(name, d);
-		if (flag_const == 1) symbol_table.set_const(name);
+		if (flag_const == 2) context.symbol_table.set_unconst(name);
+		context.symbol_table.set_value(name, d);
+		if (flag_const == 1) context.symbol_table.set_const(name);
 		return d;
 	}
 	
-	symbol_table.push_back(name, d);
-	if (flag_const == 1) symbol_table.set_const(name);
+	context.symbol_table.push_back(name, d);
+	if (flag_const == 1) context.symbol_table.set_const(name);
 	return d;	
 }
