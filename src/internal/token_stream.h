@@ -31,6 +31,7 @@ class Token_stream {
 public:
     Token_stream() : stream(nullptr), full(false), buffer() { }
     Token get();
+    std::string get_file_path();
 
     void set_input(std::istream& s) {
         stream = &s;

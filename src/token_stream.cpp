@@ -61,3 +61,43 @@ void Token_stream::ignore(TokenKind c)
 	while (*stream >> ch)
 		if (ch == static_cast<char>(c)) return;
 }
+
+std::string Token_stream::get_file_path()
+{
+    std::string file_path;
+    char ch;
+
+    while (stream->get(ch) && std::isspace(static_cast<unsigned char>(ch))){}
+
+    if (!*stream || ch == ';')
+        error("file path expected");
+
+    bool semicolon_found = false;
+
+    do
+    {
+        if (ch == ';')
+        {
+            stream->putback(ch);
+            semicolon_found = true;
+            break;
+        }
+
+        file_path += ch;
+
+    } while (stream->get(ch));
+
+    if (!semicolon_found)
+        error("';' expected after file path");
+
+    while (!file_path.empty() &&
+           std::isspace(static_cast<unsigned char>(file_path.back())))
+    {
+        file_path.pop_back();
+    }
+
+    if (file_path.empty())
+        error("file path expected");
+
+    return file_path;
+}

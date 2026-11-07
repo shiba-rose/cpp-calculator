@@ -181,4 +181,9 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_uninitialized.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_vector.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_bvector.h \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/vector.tcc
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/vector.tcc \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/stack \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/deque \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_deque.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/deque.tcc \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_stack.h

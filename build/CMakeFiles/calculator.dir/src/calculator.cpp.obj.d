@@ -183,6 +183,11 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_vector.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_bvector.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/vector.tcc \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/stack \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/deque \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_deque.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/deque.tcc \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_stack.h \
  C:/project/calculator/src/internal/token_stream.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iostream \
  C:/project/calculator/src/internal/grammar.h \
@@ -202,4 +207,26 @@ CMakeFiles/calculator.dir/src/calculator.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/tr1/poly_hermite.tcc \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/tr1/poly_laguerre.tcc \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/tr1/riemann_zeta.tcc \
- C:/project/calculator/src/internal/utility.h
+ C:/project/calculator/src/internal/utility.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/fstream \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/fstream.tcc \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/filesystem \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/fs_fwd.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstdint \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stdint.h \
+ C:/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/chrono.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ratio \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/parse_numbers.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/fs_path.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/codecvt \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/concurrence.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/shared_ptr.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/shared_ptr_base.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/allocated_ptr.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/refwrap.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/unique_ptr.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/fs_dir.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/fs_ops.h

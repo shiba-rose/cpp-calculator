@@ -7,6 +7,7 @@
 #include "utility.h"
 #include <stdexcept>
 #include <fstream>
+#include <filesystem>
 
 
 std::string calculator(std::string str, Calculator_context& context)
@@ -37,6 +38,12 @@ std::string calculator(std::string str, Calculator_context& context)
 
             if (t.kind == TokenKind::calculate) 
             {
+                std::string file_path = context.token_stream.get_file_path();
+
+                str_result += calculate_file(file_path, context);
+
+                context.token_stream.set_input(stream);
+
                 continue;
             }
 
@@ -67,15 +74,33 @@ std::string calculate_file(
     const std::string& file_path,
     Calculator_context& context)
 {
-std::ifstream file(file_path);
+    std::filesystem::path path = std::filesystem::weakly_canonical(file_path);
 
+    std::stack<std::string> temp = context.file_stack;
+    while (!temp.empty()) {
+    if (temp.top() == path.string())
+        throw std::runtime_error("Recursive file calculation: " + path.string());
+
+    temp.pop();
+    }
+
+    context.file_stack.push(path.string());
+
+    std::ifstream file(file_path);
+    
     if (!file) throw std::runtime_error("Cannot open file: " + file_path);
 
-    std::string line;
-    std::string output;
+    try {
+        std::string line;
+        std::string output;
 
-    while (std::getline(file, line))  output += calculator(line, context);
-  
-    return output;
+        while (std::getline(file, line))  output += calculator(line, context);
 
+        context.file_stack.pop();
+        return output;
+    }
+    catch (...) {
+    context.file_stack.pop();
+    throw;
+    }
 }

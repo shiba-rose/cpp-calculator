@@ -185,6 +185,11 @@ CMakeFiles/calculator.dir/src/grammar.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/quoted_string.h \
  C:/project/calculator/src/internal/calculator_context.h \
  C:/project/calculator/src/internal/variable.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/stack \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/deque \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_deque.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/deque.tcc \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stl_stack.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cmath \
  C:/msys64/mingw64/x86_64-w64-mingw32/include/math.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/specfun.h \
