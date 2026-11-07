@@ -40,5 +40,4 @@ public:
     void ignore(TokenKind c);
 };
 
-extern Token_stream ts;
 #endif

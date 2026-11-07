@@ -13,14 +13,16 @@ std::string calculator(std::string str)
 {
     std::string str_result;
     std::istringstream stream(str);
-    ts.set_input(stream);
+    
+    Token_stream token_stream;
+    token_stream.set_input(stream);
 
     for (;;) {
         try {
-            Token t = ts.get();
+            Token t = token_stream.get();
 
             while (t.kind == TokenKind::semicolon) 
-                t = ts.get();
+                t = token_stream.get();
 
             if (t.kind == TokenKind::end_of_input)
                 break;
@@ -33,10 +35,10 @@ std::string calculator(std::string str)
                 continue;
             }
 
-            ts.unget(t);
+            token_stream.unget(t);
             std::ostringstream output;
 
-            double value = statement();
+            double value = statement(token_stream);
             std::ostringstream s;
             s << std::setprecision(15) << std::defaultfloat << value;
             std::string suffix = s.str() + " ";
@@ -48,7 +50,7 @@ std::string calculator(std::string str)
         }
         catch (const std::runtime_error& e) {
             str_result += std::string("Error: ") + e.what() + '\n';
-            clean_up_mess();
+            clean_up_mess(token_stream);
         }
     primer ="";
     }

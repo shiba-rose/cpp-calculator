@@ -10,7 +10,7 @@
 #include "token_stream.h"
 
 
-void clean_up_mess(); 
+void clean_up_mess(Token_stream& token_stream); 
 
 // error() simply disguises throws:
 [[noreturn]] void error (const std::string& s);

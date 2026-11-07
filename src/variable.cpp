@@ -62,20 +62,20 @@ void Symbol_table::set_unconst(std::string name)
 void Symbol_table::push_back(std::string s, double d){
 	var_table.push_back(Variable(s, d));
 }
-double Symbol_table::define_name(){
+double Symbol_table::define_name(Token_stream& token_stream){
 
-	Token t = ts.get();
+	Token t = token_stream.get();
 	int flag_const = 0;
 	if (t.kind == TokenKind::constant || t.kind == TokenKind::unconst)
 	{
 		if (t.kind == TokenKind::constant) flag_const = 1;
 		if (t.kind == TokenKind::unconst) flag_const = 2;
-		t = ts.get();	
+		t = token_stream.get();	
 	}
 	if (t.kind != TokenKind::identifier) error("name expected in declaration");
 	std::string name = t.name;
 	write_primer(name);
-	Token t2 = ts.get();
+	Token t2 = token_stream.get();
 	if (t2.kind != TokenKind::assign)
 	{
 		if (flag_const == 1)
@@ -91,7 +91,7 @@ double Symbol_table::define_name(){
 		return var_table[find_name_index(name)].value;
 	}
 	write_primer(t2.kind);
-	double d = expression();
+	double d = expression(token_stream);
 	if (symbol_table.is_declared(name))
 	{
 		if (flag_const == 2) symbol_table.set_unconst(name);

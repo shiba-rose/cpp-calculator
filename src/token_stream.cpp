@@ -3,7 +3,7 @@
 #include "utility.h"
 #include <cctype>
 
-Token_stream ts;
+
 
 // Reads input and converts it into tokens
 
@@ -47,7 +47,6 @@ Token Token_stream::get()
  
 	error("Bad token");	
 }
-
 
 
 void Token_stream::ignore(TokenKind c)

@@ -2,9 +2,9 @@
 
 // discards input until the next print token.
 
-void clean_up_mess()
+void clean_up_mess(Token_stream& token_stream)
 {
-	ts.ignore(TokenKind::semicolon);
+	token_stream.ignore(TokenKind::semicolon);
 }
 
 
