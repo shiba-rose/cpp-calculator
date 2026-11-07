@@ -62,22 +62,28 @@ void Symbol_table::set_unconst(std::string name)
 void Symbol_table::push_back(std::string s, double d){
 	var_table.push_back(Variable(s, d));
 }
-double Symbol_table::define_name(Token_stream& token_stream){
+double Symbol_table::define_name(Calculator_context context){
 
-	Token t = token_stream.get();
+	Token t = context.token_stream.get();
 	int flag_const = 0;
 	if (t.kind == TokenKind::constant || t.kind == TokenKind::unconst)
 	{
 		if (t.kind == TokenKind::constant) flag_const = 1;
 		if (t.kind == TokenKind::unconst) flag_const = 2;
-		t = token_stream.get();	
+		t = context.token_stream.get();	
 	}
 	if (t.kind != TokenKind::identifier) error("name expected in declaration");
 	std::string name = t.name;
-	write_primer(name);
-	Token t2 = token_stream.get();
+	write_input_text(context,name);
+	Token t2 = context.token_stream.get();
 	if (t2.kind != TokenKind::assign)
 	{
+		if (!is_declared(name))
+    	{
+        	context.token_stream.unget(t2);
+        	error("find: undefined name ", name);
+     	}
+
 		if (flag_const == 1)
 		{
 			symbol_table.set_const(name);
@@ -90,8 +96,8 @@ double Symbol_table::define_name(Token_stream& token_stream){
 
 		return var_table[find_name_index(name)].value;
 	}
-	write_primer(t2.kind);
-	double d = expression(token_stream);
+	write_input_text(context,t2.kind);
+	double d = expression(context);
 	if (symbol_table.is_declared(name))
 	{
 		if (flag_const == 2) symbol_table.set_unconst(name);

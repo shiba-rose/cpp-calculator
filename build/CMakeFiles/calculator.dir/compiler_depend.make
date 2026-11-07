@@ -391,6 +391,7 @@ CMakeFiles/calculator.dir/src/grammar.cpp.obj: C:/project/calculator/src/grammar
   C:/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  C:/project/calculator/src/internal/calculator.h \
   C:/project/calculator/src/internal/grammar.h \
   C:/project/calculator/src/internal/token.h \
   C:/project/calculator/src/internal/token_stream.h \
@@ -408,10 +409,12 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/basic_string.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/char_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/charconv.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/codecvt.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/concept_check.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/cpp_type_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/cxxabi_forced.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/enable_special_members.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/erase_if.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/exception.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/exception_defines.h \
@@ -419,13 +422,18 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/functexcept.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/functional_hash.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/hash_bytes.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/hashtable.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/hashtable_policy.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/invoke.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ios_base.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/istream.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_classes.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_classes.tcc \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_conv.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets.tcc \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/localefwd.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/memory_resource.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/memoryfwd.h \
@@ -434,6 +442,7 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/new_allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/new_except.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/new_throw.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/node_handle.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream_insert.h \
@@ -441,6 +450,7 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/postypes.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/predefined_ops.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ptr_traits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/quoted_string.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/range_access.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/requires_hosted.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/sstream.tcc \
@@ -459,6 +469,7 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/streambuf_iterator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/string_view.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/stringfwd.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/unordered_map.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/uses_allocator_args.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/utility.h \
@@ -470,21 +481,25 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstddef \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstdio \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstdlib \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ctime \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cwchar \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cwctype \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/debug/assertions.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/debug/debug.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/exception \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/aligned_buffer.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/alloc_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/atomicity.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/numeric_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/string_conversions.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/type_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/initializer_list \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iomanip \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ios \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iosfwd \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iostream \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/istream \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/locale \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/new \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ostream \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/pstl/pstl_config.h \
@@ -498,6 +513,7 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/tuple \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/type_traits \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/typeinfo \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/unordered_map \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -508,7 +524,9 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/limits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/mm_malloc.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stddef.h \
@@ -554,7 +572,10 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: C:/project/calculator/src/main.cpp \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  C:/project/calculator/src/internal/calculator.h
+  C:/project/calculator/src/internal/calculator.h \
+  C:/project/calculator/src/internal/token.h \
+  C:/project/calculator/src/internal/token_stream.h \
+  C:/project/calculator/src/internal/utility.h
 
 CMakeFiles/calculator.dir/src/token.cpp.obj: C:/project/calculator/src/token.cpp \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/backward/binders.h \
@@ -674,6 +695,7 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/project/calculator/src/to
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/basic_string.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/char_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/charconv.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/codecvt.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/concept_check.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/cpp_type_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/cxxabi_forced.h \
@@ -693,8 +715,11 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/project/calculator/src/to
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/istream.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_classes.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_classes.tcc \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_conv.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets.tcc \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/localefwd.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/memory_resource.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/memoryfwd.h \
@@ -711,6 +736,7 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/project/calculator/src/to
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/postypes.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/predefined_ops.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ptr_traits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/quoted_string.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/range_access.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/requires_hosted.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/sstream.tcc \
@@ -741,6 +767,7 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/project/calculator/src/to
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstddef \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstdio \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstdlib \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ctime \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cwchar \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cwctype \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/debug/assertions.h \
@@ -753,10 +780,12 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/project/calculator/src/to
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/string_conversions.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/type_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/initializer_list \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iomanip \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ios \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iosfwd \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iostream \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/istream \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/locale \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/new \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ostream \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/pstl/pstl_config.h \
@@ -781,7 +810,9 @@ CMakeFiles/calculator.dir/src/token_stream.cpp.obj: C:/project/calculator/src/to
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/limits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/mm_malloc.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stddef.h \
@@ -842,6 +873,7 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/basic_string.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/char_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/charconv.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/codecvt.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/concept_check.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/cpp_type_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/cxxabi_forced.h \
@@ -861,8 +893,11 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/istream.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_classes.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_classes.tcc \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_conv.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets.tcc \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/localefwd.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/memory_resource.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/memoryfwd.h \
@@ -879,6 +914,7 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/postypes.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/predefined_ops.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ptr_traits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/quoted_string.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/range_access.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/requires_hosted.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/sstream.tcc \
@@ -909,6 +945,7 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstddef \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstdio \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstdlib \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ctime \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cwchar \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cwctype \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/debug/assertions.h \
@@ -921,9 +958,11 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/string_conversions.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/type_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/initializer_list \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iomanip \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ios \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iosfwd \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/istream \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/locale \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/new \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ostream \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/pstl/pstl_config.h \
@@ -948,7 +987,9 @@ CMakeFiles/calculator.dir/src/utility.cpp.obj: C:/project/calculator/src/utility
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/limits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/mm_malloc.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stddef.h \
@@ -1009,6 +1050,7 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/project/calculator/src/variab
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/basic_string.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/char_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/charconv.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/codecvt.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/concept_check.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/cpp_type_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/cxxabi_forced.h \
@@ -1028,8 +1070,11 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/project/calculator/src/variab
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/istream.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_classes.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_classes.tcc \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_conv.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets.tcc \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/localefwd.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/memory_resource.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/memoryfwd.h \
@@ -1046,6 +1091,7 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/project/calculator/src/variab
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/postypes.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/predefined_ops.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ptr_traits.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/quoted_string.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/range_access.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/requires_hosted.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/specfun.h \
@@ -1082,6 +1128,7 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/project/calculator/src/variab
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstddef \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstdio \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstdlib \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ctime \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cwchar \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cwctype \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/debug/assertions.h \
@@ -1094,10 +1141,12 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/project/calculator/src/variab
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/string_conversions.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/type_traits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/initializer_list \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iomanip \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ios \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iosfwd \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/istream \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/limits \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/locale \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/new \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ostream \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/pstl/pstl_config.h \
@@ -1135,7 +1184,9 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/project/calculator/src/variab
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/limits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/mm_malloc.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stddef.h \
@@ -1182,6 +1233,7 @@ CMakeFiles/calculator.dir/src/variable.cpp.obj: C:/project/calculator/src/variab
   C:/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  C:/project/calculator/src/internal/calculator.h \
   C:/project/calculator/src/internal/grammar.h \
   C:/project/calculator/src/internal/token.h \
   C:/project/calculator/src/internal/token_stream.h \

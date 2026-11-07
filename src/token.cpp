@@ -1,5 +1,5 @@
 #include "token.h"
-#include <string>
+
 
 Token::Token(char ch) :kind(static_cast<TokenKind>(ch)), value(0), name("") { }
 Token::Token(double val) :kind(TokenKind::number), value(val), name("") { }

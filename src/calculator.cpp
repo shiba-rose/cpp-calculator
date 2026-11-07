@@ -9,20 +9,20 @@
 
 
 
-std::string calculator(std::string str)
+std::string calculator(std::string str, Calculator_context context)
 {
     std::string str_result;
     std::istringstream stream(str);
     
-    Token_stream token_stream;
-    token_stream.set_input(stream);
+    std::string input_text;
+    context.token_stream.set_input(stream);
 
     for (;;) {
         try {
-            Token t = token_stream.get();
+            Token t = context.token_stream.get();
 
             while (t.kind == TokenKind::semicolon) 
-                t = token_stream.get();
+                t = context.token_stream.get();
 
             if (t.kind == TokenKind::end_of_input)
                 break;
@@ -35,10 +35,10 @@ std::string calculator(std::string str)
                 continue;
             }
 
-            token_stream.unget(t);
+            context.token_stream.unget(t);
             std::ostringstream output;
 
-            double value = statement(token_stream);
+            double value = statement(context);
             std::ostringstream s;
             s << std::setprecision(15) << std::defaultfloat << value;
             std::string suffix = s.str() + " ";
@@ -46,13 +46,13 @@ std::string calculator(std::string str)
             output << result << value;
 
             output << '\n';
-            str_result = str_result + primer + output.str();
+            str_result = str_result + context.text_input + output.str();
         }
         catch (const std::runtime_error& e) {
             str_result += std::string("Error: ") + e.what() + '\n';
-            clean_up_mess(token_stream);
+            clean_up_mess(context);
         }
-    primer ="";
+    context.text_input = "";
     }
     
     return str_result;

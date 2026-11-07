@@ -156,4 +156,25 @@ CMakeFiles/calculator.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/istream.tcc \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/sstream \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/sstream.tcc \
- C:/project/calculator/src/internal/calculator.h
+ C:/project/calculator/src/internal/calculator.h \
+ C:/project/calculator/src/internal/utility.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iomanip \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/locale \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ctime \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/codecvt.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_facets_nonio.tcc \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_conv.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/quoted_string.h \
+ C:/project/calculator/src/internal/token.h \
+ C:/project/calculator/src/internal/token_stream.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/unordered_map \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/unordered_map.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/hashtable.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/hashtable_policy.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ext/aligned_buffer.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/enable_special_members.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/node_handle.h \
+ C:/project/calculator/src/internal/utility.h

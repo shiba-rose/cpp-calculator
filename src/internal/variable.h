@@ -6,7 +6,8 @@
 
 #include "token.h"
 #include "token_stream.h"	
-#include "utility.h"		
+#include "utility.h"
+#include "calculator.h"		
 
 //function for finding the value of a variable
 struct Variable {
@@ -28,7 +29,7 @@ public:
 	void set_const(std::string name);
 	void set_unconst(std::string name);
 	void push_back(std::string s, double d);
-	double define_name(Token_stream& token_stream);
+	double define_name(Calculator_context context);
 };
 
 extern Symbol_table symbol_table;

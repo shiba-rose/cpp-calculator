@@ -40,4 +40,5 @@ public:
     void ignore(TokenKind c);
 };
 
+
 #endif

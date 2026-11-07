@@ -3,18 +3,22 @@
 #include <sstream>
 #include <string>
 #include "calculator.h"
+#include "utility.h"
+
+
 
 
 
 void run_calculator()
 {
+	Calculator_context context;
 	for(;;) 
 	try {
 		std::cout << ">";
 		std::string input;
 
 		if (!std::getline(std::cin, input)) return;
-		std::string result {calculator(input)};
+		std::string result {calculator(input,context)};
 		std::cout << result;
 	}
 
