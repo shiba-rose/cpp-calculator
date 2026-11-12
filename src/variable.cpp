@@ -66,17 +66,17 @@ double Symbol_table::define_name(Calculator_context& context){
 
 	Token t = context.token_stream.get();
 	int flag_const = 0;
-	if (t.kind == TokenKind::constant || t.kind == TokenKind::unconst)
+	if (t.kind == Kind::constant || t.kind == Kind::unconst)
 	{
-		if (t.kind == TokenKind::constant) flag_const = 1;
-		if (t.kind == TokenKind::unconst) flag_const = 2;
+		if (t.kind == Kind::constant) flag_const = 1;
+		if (t.kind == Kind::unconst) flag_const = 2;
 		t = context.token_stream.get();	
 	}
-	if (t.kind != TokenKind::identifier) error("name expected in declaration");
+	if (t.kind != Kind::identifier) error("name expected in declaration");
 	std::string name = t.name;
 	write_input_text(context,name);
 	Token t2 = context.token_stream.get();
-	if (t2.kind != TokenKind::assign)
+	if (t2.kind != Kind::assign)
 	{
 		if (!is_declared(name))
     	{

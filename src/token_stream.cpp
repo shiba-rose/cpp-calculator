@@ -13,9 +13,9 @@ Token Token_stream::get()
 
 	if (full) { full = false; return buffer; }
 	
-	if (!(*stream >> ch)) return Token(TokenKind::end_of_input);
+	if (!(*stream >> ch)) return Token(Kind::end_of_input);
 	
-	if (symbols.find(ch) != std::string::npos) return Token(ch);
+	if (operations.find(ch) != std::string::npos) return Token(ch);
 
 	if (numbers.find(ch) != std::string::npos)
 	{	
@@ -49,7 +49,7 @@ Token Token_stream::get()
 }
 
 
-void Token_stream::ignore(TokenKind c)
+void Token_stream::ignore(Kind c)
 {
 	if (full && c == buffer.kind) {
 		full = false;
@@ -78,7 +78,7 @@ std::string Token_stream::get_file_path()
     {
         if (ch == ';')
         {
-            stream->putback(ch);
+            stream->unget();
             semicolon_found = true;
             break;
         }
@@ -90,14 +90,10 @@ std::string Token_stream::get_file_path()
     if (!semicolon_found)
         error("';' expected after file path");
 
-    while (!file_path.empty() &&
-           std::isspace(static_cast<unsigned char>(file_path.back())))
+    while ( std::isspace(static_cast<unsigned char>(file_path.back())))
     {
         file_path.pop_back();
     }
-
-    if (file_path.empty())
-        error("file path expected");
 
     return file_path;
 }

@@ -4,7 +4,7 @@
 
 void clean_up_mess(Calculator_context& context)
 {
-	context.token_stream.ignore(TokenKind::semicolon);
+	context.token_stream.ignore(Kind::semicolon);
 }
 
 
@@ -40,7 +40,7 @@ void write_input_text(Calculator_context& context, double value)
     context.text_input += stream.str() + " ";
 }
 
-void write_input_text(Calculator_context& context, TokenKind kind)
+void write_input_text(Calculator_context& context, Kind kind)
 {
 	std::string str {static_cast<char>(kind)};
 	context.text_input = context.text_input + str + " ";

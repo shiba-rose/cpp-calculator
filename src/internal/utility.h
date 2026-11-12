@@ -21,7 +21,7 @@ void clean_up_mess(Calculator_context& context);
 
 void write_input_text(Calculator_context& context, std::string str);
 void write_input_text(Calculator_context& context, double value);
-void write_input_text(Calculator_context& context, TokenKind kind);
+void write_input_text(Calculator_context& context, Kind kind);
 
 std::string help();
 #endif

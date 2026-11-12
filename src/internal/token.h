@@ -4,7 +4,7 @@
 #include <string>
 
 // Character codes identifying token kinds.
-enum class TokenKind : char {
+enum class Kind : char {
     none = 0,
 
     left_parenthesis = '(',
@@ -40,13 +40,13 @@ enum class TokenKind : char {
 
 // Represents a token read from the input.
 struct Token {
-	TokenKind kind;
+	Kind kind;
 	double value;
 	std::string name;
 
-	Token() : kind(TokenKind::none), value(0.0), name("") {};
+	Token() : kind(Kind::none), value(0.0), name("") {};
 	Token(char ch);
-	Token(TokenKind ch);
+	Token(Kind ch);
     Token(double val);
     Token(std::string n);
 

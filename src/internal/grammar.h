@@ -10,7 +10,7 @@ double declaration(Calculator_context& context);
 double statement(Calculator_context& context);
 void write_primer(std::string str);
 void write_primer(double value);
-void write_primer(TokenKind kind);
+void write_primer(Kind kind);
 
 
 #endif

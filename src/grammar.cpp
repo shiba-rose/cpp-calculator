@@ -16,26 +16,26 @@ double primary(Calculator_context& context)
 	Token ind;
 	double prov;
 	switch (t.kind) {
-	case TokenKind::left_parenthesis:
+	case Kind::left_parenthesis:
 	{	
 		write_input_text(context,t.kind);
 		double d = expression(context);
 	    t = context.token_stream.get();
-		if (t.kind != TokenKind::right_parenthesis) error("')' expected");
+		if (t.kind != Kind::right_parenthesis) error("')' expected");
 		write_input_text(context,t.kind);
 		return d;
 	}
-	case TokenKind::plus:
-	case TokenKind::minus:
+	case Kind::plus:
+	case Kind::minus:
 	{
     int sign = 1;
 
     for(;;) {
-        if (t.kind == TokenKind::minus) {
+        if (t.kind == Kind::minus) {
             sign = -sign;
         }
 
-        else if (t.kind != TokenKind::plus) {
+        else if (t.kind != Kind::plus) {
             break;
         }
 		write_input_text(context,t.kind);
@@ -45,15 +45,15 @@ double primary(Calculator_context& context)
     context.token_stream.unget(t);
     return sign * primary(context);
 }
-	case TokenKind::number:
+	case Kind::number:
 		ind = context.token_stream.get();
-		if (ind.kind == TokenKind::degrees) {
+		if (ind.kind == Kind::degrees) {
 			write_input_text(context,t.value);
 			write_input_text(context,"deg");
 			const double pi = std::acos(-1.0);
 			return t.value * pi / 180.0;
 		}
-		else if (ind.kind == TokenKind::radians) {
+		else if (ind.kind == Kind::radians) {
 			write_input_text(context,t.value);
 			write_input_text(context,"rad");
 			return t.value;
@@ -63,24 +63,24 @@ double primary(Calculator_context& context)
 		}
 		write_input_text(context,t.value);
 		return t.value;
-	case TokenKind::identifier:
+	case Kind::identifier:
 		write_input_text(context,t.name);
 		return context.symbol_table.get_value(t.name);
-	case TokenKind::sine:
+	case Kind::sine:
 		ind = context.token_stream.get();
-		if (ind.kind != TokenKind::left_parenthesis) error("'(' expected after sin");
+		if (ind.kind != Kind::left_parenthesis) error("'(' expected after sin");
 		context.token_stream.unget(ind);
 		write_input_text(context,"sin");
 		return std::sin(primary(context));
-	case TokenKind::cosine:
+	case Kind::cosine:
 		ind = context.token_stream.get();
-		if (ind.kind != TokenKind::left_parenthesis) error("'(' expected after cos");
+		if (ind.kind != Kind::left_parenthesis) error("'(' expected after cos");
 		context.token_stream.unget(ind);
 		write_input_text(context,"cos");
 		return std::cos(primary(context));
-	case TokenKind::tangent:
+	case Kind::tangent:
 		ind = context.token_stream.get();
-		if (ind.kind != TokenKind::left_parenthesis) error("'(' expected after tg");
+		if (ind.kind != Kind::left_parenthesis) error("'(' expected after tg");
 		context.token_stream.unget(ind);
 		write_input_text(context,"tg");
 		prov = primary(context);
@@ -99,11 +99,11 @@ double term(Calculator_context& context)
 	for(;;) {
 		Token t = context.token_stream.get();
 		switch (t.kind) {
-		case TokenKind::multiply:
+		case Kind::multiply:
 			write_input_text(context,t.kind);
 			left *= primary(context);
 			break;
-		case TokenKind::divide:
+		case Kind::divide:
 		{
 			write_input_text(context,t.kind);	
 			double d = primary(context);
@@ -124,11 +124,11 @@ double expression(Calculator_context& context)
 	for(;;) {
 		Token t = context.token_stream.get();
 		switch (t.kind) {
-		case TokenKind::plus:
+		case Kind::plus:
 			write_input_text(context,t.kind);
 			left += term(context);
 			break;
-		case TokenKind::minus:
+		case Kind::minus:
 			write_input_text(context,t.kind);
 			left -= term(context);
 			break;
@@ -150,7 +150,7 @@ double statement(Calculator_context& context)
 {
 	Token t = context.token_stream.get();
 	switch (t.kind) {
-	case TokenKind::let:
+	case Kind::let:
 		return declaration(context);
 	default:
 		context.token_stream.unget(t);

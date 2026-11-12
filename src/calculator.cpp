@@ -18,25 +18,25 @@ std::string calculator(std::string str, Calculator_context& context)
     std::string input_text;
     context.token_stream.set_input(stream);
 
-    for (;;) {
+    while(true) {
         try {
             Token t = context.token_stream.get();
 
-            while (t.kind == TokenKind::semicolon) 
+            while (t.kind == Kind::semicolon) 
                 t = context.token_stream.get();
 
-            if (t.kind == TokenKind::end_of_input)
+            if (t.kind == Kind::end_of_input)
                 break;
 
-            if (t.kind == TokenKind::quit)
+            if (t.kind == Kind::quit)
                 throw std::string("quit");
 
-            if (t.kind == TokenKind::help) {
+            if (t.kind == Kind::help) {
                 str_result += help();
                 continue;
             }
 
-            if (t.kind == TokenKind::calculate) 
+            if (t.kind == Kind::calculate) 
             {
                 std::string file_path = context.token_stream.get_file_path();
 
@@ -51,14 +51,9 @@ std::string calculator(std::string str, Calculator_context& context)
             std::ostringstream output;
 
             double value = statement(context);
-            std::ostringstream s;
-            s << std::setprecision(15) << std::defaultfloat << value;
-            std::string suffix = s.str() + " ";
-
-            output << result << value;
-
-            output << '\n';
+            output << result << value << '\n';
             str_result = str_result + context.text_input + output.str();
+            
         }
         catch (const std::runtime_error& e) {
             str_result += std::string("Error: ") + e.what() + '\n';
