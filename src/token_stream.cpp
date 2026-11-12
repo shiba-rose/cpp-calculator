@@ -64,7 +64,7 @@ void Token_stream::ignore(Kind c)
 		auto it = operations.find(ch);
 		if (it == operations.end()) continue;
 		
-		if (Token(it->second) == c) return; 
+		if (it->second == c) return; 
 	}
 }
 

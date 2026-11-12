@@ -43,6 +43,8 @@ void write_input_text(Calculator_context& context, double value)
 void write_input_text(Calculator_context& context, Kind kind)
 {
   auto it = reverse_operations.find(kind);
+  if (it == reverse_operations.end()) error("Unknown operation");
+
 	std::string str {it->second};
 	context.text_input = context.text_input + str + " ";
 }
