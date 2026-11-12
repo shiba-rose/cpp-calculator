@@ -53,7 +53,7 @@ std::string calculator(std::string str, Calculator_context& context)
             double value = statement(context);
             output << result << value << '\n';
             str_result = str_result + context.text_input + output.str();
-            
+
         }
         catch (const std::runtime_error& e) {
             str_result += std::string("Error: ") + e.what() + '\n';
@@ -87,9 +87,11 @@ std::string calculate_file(
 
     try {
         std::string line;
-        std::string output;
+        std::string output {"Called file: " + path.string() + '\n'};
+        Calculator_context file_context;
+        file_context.file_stack = context.file_stack;
 
-        while (std::getline(file, line))  output += calculator(line, context);
+        while (std::getline(file, line))  output += calculator(line, file_context);
 
         context.file_stack.pop();
         return output;

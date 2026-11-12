@@ -69,31 +69,17 @@ std::string Token_stream::get_file_path()
 
     while (stream->get(ch) && std::isspace(static_cast<unsigned char>(ch))){}
 
-    if (!*stream || ch == ';')
+    if (!*stream || ch == '"')
         error("file path expected");
 
-    bool semicolon_found = false;
-
-    do
-    {
-        if (ch == ';')
-        {
-            stream->unget();
-            semicolon_found = true;
-            break;
-        }
-
+    while (stream->get(ch) && ch != '"')
         file_path += ch;
 
-    } while (stream->get(ch));
+    if (!*stream)
+    	error("Closing quotation mark expected");
 
-    if (!semicolon_found)
-        error("';' expected after file path");
-
-    while ( std::isspace(static_cast<unsigned char>(file_path.back())))
-    {
-        file_path.pop_back();
-    }
+    if (file_path.empty())
+        error("File path cannot be empty");
 
     return file_path;
 }

@@ -3,6 +3,7 @@
 #define TOKEN_H
 #include <string>
 
+
 // Character codes identifying token kinds.
 enum class Kind : char {
     none = 0,
