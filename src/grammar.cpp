@@ -4,9 +4,37 @@
 #include "utility.h"
 #include <iomanip>
 #include <sstream>
-// calculator grammar  
- 
+/*
+ calculator grammar  
 
+ statement:
+    let declaration
+    expression
+
+ declaration:
+    [const | unconst | empty] name = expression
+
+ expression:
+    term
+    expression + term
+    expression - term
+ 
+ term:
+    primary
+    term * primary
+    term / primary
+
+ primary:
+    number [deg | rad | simple]
+    name
+    ( expression )
+    + primary
+    - primary
+    [sin | cos | tg] ( expression )
+
+ ";" only separates statements, it is optional
+ "deg" turns degrees into radians, "rad" is the default
+*/
 
 
 
@@ -139,7 +167,7 @@ double expression(Calculator_context& context)
 	}
 }
 
-// function parses the declaration of a variable of the form "let name = expression"
+//function parses the declaration of a variable of the form "let name = expression"
 double declaration(Calculator_context& context)
 {
 	return context.symbol_table.define_name(context);
