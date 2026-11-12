@@ -15,7 +15,8 @@ Token Token_stream::get()
 	
 	if (!(*stream >> ch)) return Token(Kind::end_of_input);
 	
-	if (operations.find(ch) != std::string::npos) return Token(ch);
+	auto it = operations.find(ch);
+	if (it != operations.end()) return Token(it->second);
 
 	if (numbers.find(ch) != std::string::npos)
 	{	
@@ -59,7 +60,12 @@ void Token_stream::ignore(Kind c)
 
 	char ch;
 	while (*stream >> ch)
-		if (ch == static_cast<char>(c)) return;
+	{
+		auto it = operations.find(ch);
+		if (it == operations.end()) continue;
+		
+		if (Token(it->second) == c) return; 
+	}
 }
 
 std::string Token_stream::get_file_path()

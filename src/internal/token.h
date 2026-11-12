@@ -5,41 +5,41 @@
 
 
 // Character codes identifying token kinds.
-enum class Kind : char {
-    none = 0,
+enum class Kind {
+    none,
 
-    left_parenthesis = '(',
-    right_parenthesis = ')',
+    left_parenthesis,
+    right_parenthesis,
 
-    plus = '+',
-    minus = '-',
-    multiply = '*',
-    divide = '/',
-    modulo = '%',
+    plus,
+    minus,
+    multiply,
+    divide,
+    remainder,
 
-    semicolon = ';',
-    assign = '=',
+    semicolon,
+    assign,
 
-    unconst = 'U',
-    help = 'H',
-    constant = 'C',
-    let = 'L',
-    quit = 'Q',
+    unconst,
+    help,
+    constant,
+    let,
+    quit,
 
-    calculate = 'A',
-    global = 'g',
-    local = 'l',
+    calculate,
+    global,
+    local,
 
 
-    number = '8',
-    identifier = 'a',
-    end_of_input = 'E',
+    number,
+    identifier,
+    end_of_input ,
 
-    sine = 's',
-    cosine = 'c',
-    tangent = 't',
-    degrees = 'd',
-    radians = 'r'
+    sine ,
+    cosine,
+    tangent,
+    degrees,
+    radians 
 
 };
 
@@ -50,7 +50,6 @@ struct Token {
 	std::string name;
 
 	Token() : kind(Kind::none), value(0.0), name("") {};
-	Token(char ch);
 	Token(Kind ch);
     Token(double val);
     Token(std::string n);

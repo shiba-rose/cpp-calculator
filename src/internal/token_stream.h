@@ -4,8 +4,30 @@
 #include <istream>
 #include <unordered_map>
 
-const std::string operations = "()+-*/%;=";
 const std::string numbers = ".0123456789";
+
+
+inline const std::unordered_map<char, Kind> operations = {
+    {'(', Kind::left_parenthesis},
+    {')', Kind::right_parenthesis},
+    {'+', Kind::plus},
+    {'-', Kind::minus},
+    {'*', Kind::multiply},
+    {'/', Kind::divide},
+    {'%', Kind::remainder},
+    {';', Kind::semicolon},
+    {'=', Kind::assign}
+};
+
+inline const std::unordered_map<Kind, char> reverse_operations = [] {
+    std::unordered_map<Kind, char> result;
+
+    for (const auto& [ch, kind] : operations) {
+        result[kind] = ch;
+    }
+
+    return result;
+}();
 
 const std::unordered_map<std::string, Kind> keywords = {
     {"let", Kind::let},
