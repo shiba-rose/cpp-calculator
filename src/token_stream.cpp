@@ -69,7 +69,7 @@ std::string Token_stream::get_file_path()
 
     while (stream->get(ch) && std::isspace(static_cast<unsigned char>(ch))){}
 
-    if (!*stream || ch == '"')
+    if (!*stream || ch != '"')
         error("file path expected");
 
     while (stream->get(ch) && ch != '"')

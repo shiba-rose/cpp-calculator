@@ -18,7 +18,9 @@ const std::unordered_map<std::string, Kind> keywords = {
     {"tg", Kind::tangent},
     {"deg", Kind::degrees},
     {"rad", Kind::radians},
-    {"calculate", Kind::calculate}
+    {"calculate", Kind::calculate},
+    {"global", Kind::global},
+    {"local", Kind::local}
 };
 
 // Reads tokens from the input and supports one-token buffering.

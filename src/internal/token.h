@@ -25,7 +25,11 @@ enum class Kind : char {
     constant = 'C',
     let = 'L',
     quit = 'Q',
+
     calculate = 'A',
+    global = 'g',
+    local = 'l',
+
 
     number = '8',
     identifier = 'a',
